@@ -1,6 +1,6 @@
 # Goal: build and test Incident Room
 
-Status: authorized and in execution; no simulator completion claimed yet.
+Status: first scoped goal completed. Reviewed simulator/app source published in `8b2734e`; actual hybrid episode stabilized at tick 8, while the rules baseline stabilized at tick 4. All 79 tests and hosted CI passed. Public browser playback passed desktop/phone-width smoke checks with no failed assets or unexpected network requests. Preview: https://14-tr.github.io/jev-empirical/apps/incident-room/ . Browser is explicitly recorded replay; new inference runs via the local CLI. See `apps/incident-room/RESULTS.md` for evidence and remaining hardening limitations.
 
 ## Product
 
