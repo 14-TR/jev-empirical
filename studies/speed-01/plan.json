@@ -1,0 +1,218 @@
+{
+  "config": {
+    "seed": 731029,
+    "max_post_attempts": 110,
+    "total_seconds": 600,
+    "request_timeout_seconds": 15,
+    "retries": 0,
+    "model": "jev-1.13.0",
+    "endpoint": "https://api.typesafe.ai/v1/systemone",
+    "redirects": false,
+    "planned_posts": 102,
+    "planned_answers": 144,
+    "repetitions": 3,
+    "input_usd_per_million_tokens": 0.042,
+    "output_usd_per_million_tokens": 0,
+    "pricing_source": "https://docs.typesafe.ai/models.md",
+    "warmup_posts": 0,
+    "connection_reuse": false
+  },
+  "schedule": [
+    {
+      "repetition": 1,
+      "context": "short",
+      "strategy": "batch"
+    },
+    {
+      "repetition": 1,
+      "context": "short",
+      "strategy": "serial"
+    },
+    {
+      "repetition": 1,
+      "context": "short",
+      "strategy": "concurrency4"
+    },
+    {
+      "repetition": 1,
+      "context": "long",
+      "strategy": "serial"
+    },
+    {
+      "repetition": 1,
+      "context": "long",
+      "strategy": "concurrency4"
+    },
+    {
+      "repetition": 1,
+      "context": "long",
+      "strategy": "batch"
+    },
+    {
+      "repetition": 2,
+      "context": "short",
+      "strategy": "concurrency4"
+    },
+    {
+      "repetition": 2,
+      "context": "short",
+      "strategy": "serial"
+    },
+    {
+      "repetition": 2,
+      "context": "short",
+      "strategy": "batch"
+    },
+    {
+      "repetition": 2,
+      "context": "long",
+      "strategy": "batch"
+    },
+    {
+      "repetition": 2,
+      "context": "long",
+      "strategy": "concurrency4"
+    },
+    {
+      "repetition": 2,
+      "context": "long",
+      "strategy": "serial"
+    },
+    {
+      "repetition": 3,
+      "context": "short",
+      "strategy": "serial"
+    },
+    {
+      "repetition": 3,
+      "context": "short",
+      "strategy": "batch"
+    },
+    {
+      "repetition": 3,
+      "context": "short",
+      "strategy": "concurrency4"
+    },
+    {
+      "repetition": 3,
+      "context": "long",
+      "strategy": "concurrency4"
+    },
+    {
+      "repetition": 3,
+      "context": "long",
+      "strategy": "batch"
+    },
+    {
+      "repetition": 3,
+      "context": "long",
+      "strategy": "serial"
+    }
+  ],
+  "cases": {
+    "provenance": "original-authored-synthetic-speed-study",
+    "states": {
+      "short": {
+        "text": "FICTIONAL EXPEDITION ALDER: current operational bulletin, revision 7.\nOnly facts about Expedition Alder answer the questions. Other depots are unrelated.\nRevision 2 (SUPERSEDED): Mara coordinated; gate Amber; departure Tuesday; backup enabled.\nRevision 7 (CURRENT): Lyn is coordinator, not Oren; gate Indigo replaces Amber.\nDeparture is Thursday, not Tuesday. Backup is NOT enabled. A proposal to enable it Friday is not approved and is not current policy.\nCurrent Alder rovers (all other rover facts are obsolete):\nKestrel: water-sealed yes; quarantined no; charge 70 percent.\nMarten: water-sealed yes; quarantined yes; charge 95 percent.\nPlover: water-sealed no; quarantined no; charge 90 percent.\nSwift: water-sealed yes; quarantined no; charge 40 percent.\nCurrent Alder samples:\nQuartz: refrigerated yes; spoiled no; transfer permit valid.\nJasper: refrigerated yes; spoiled no; transfer permit revoked, not valid.\nOpal: refrigerated no; spoiled no; transfer permit valid.\nFlint: refrigerated yes; spoiled yes; transfer permit valid.\nCurrent Alder operators:\nIvo: on duty yes; certified yes; suspended no.\nNia: on duty yes; certified yes; suspended yes (old clearance is superseded).\nUma: on duty no; certified yes; suspended no.\nTeo: on duty yes; certified no; suspended no.\nCurrent Alder transfer slots:\nS1: west dock; daylight yes; canceled yes.\nS2: east dock; daylight yes; canceled no.\nS3: west dock; daylight yes; canceled no.\nS4: west dock; daylight no; canceled no.\nEND OF CURRENT ALDER BULLETIN."
+      },
+      "long": {
+        "text": "Unrelated Depot D000 archive: coordinator Agent000; gate Copper; departure Monday. Its spare pump was enabled in revision 1 but disabled in revision 2. Its cargo is not refrigerated; local rover is quarantined. These records do not concern Expedition Alder.\nUnrelated Depot D001 archive: coordinator Agent001; gate Copper; departure Monday. Its spare pump was enabled in revision 1 but disabled in revision 2. Its cargo is not refrigerated; local rover is quarantined. These records do not concern Expedition Alder.\nUnrelated Depot D002 archive: coordinator Agent002; gate Copper; departure Monday. Its spare pump was enabled in revision 1 but disabled in revision 2. Its cargo is not refrigerated; local rover is quarantined. These records do not concern Expedition Alder.\nUnrelated Depot D003 archive: coordinator Agent003; gate Copper; departure Monday. Its spare pump was enabled in revision 1 but disabled in revision 2. Its cargo is not refrigerated; local rover is quarantined. These records do not concern Expedition Alder.\nUnrelated Depot D004 archive: coordinator Agent004; gate Copper; departure Monday. Its spare pump was enabled in revision 1 but disabled in revision 2. Its cargo is not refrigerated; local rover is quarantined. These records do not concern Expedition Alder.\nUnrelated Depot D005 archive: coordinator Agent005; gate Copper; departure Monday. Its spare pump was enabled in revision 1 but disabled in revision 2. Its cargo is not refrigerated; local rover is quarantined. These records do not concern Expedition Alder.\nUnrelated Depot D006 archive: coordinator Agent006; gate Copper; departure Monday. Its spare pump was enabled in revision 1 but disabled in revision 2. Its cargo is not refrigerated; local rover is quarantined. These records do not concern Expedition Alder.\nUnrelated Depot D007 archive: coordinator Agent007; gate Copper; departure Monday. Its spare pump was enabled in revision 1 but disabled in revision 2. Its cargo is not refrigerated; local rover is quarantined. These records do not concern Expedition Alder.\nUnrelated Depot D008 archive: coordinator Agent008; gate Copper; departure Monday. Its spare pump was enabled in revision 1 but disabled in revision 2. Its cargo is not refrigerated; local rover is quarantined. These records do not concern Expedition Alder.\nUnrelated Depot D009 archive: coordinator Agent009; gate Copper; departure Monday. Its spare pump was enabled in revision 1 but disabled in revision 2. Its cargo is not refrigerated; local rover is quarantined. These records do not concern Expedition Alder.\nUnrelated Depot D010 archive: coordinator Agent010; gate Copper; departure Monday. Its spare pump was enabled in revision 1 but disabled in revision 2. Its cargo is not refrigerated; local rover is quarantined. These records do not concern Expedition Alder.\nUnrelated Depot D011 archive: coordinator Agent011; gate Copper; departure Monday. Its spare pump was enabled in revision 1 but disabled in revision 2. Its cargo is not refrigerated; local rover is quarantined. These records do not concern Expedition Alder.\nUnrelated Depot D012 archive: coordinator Agent012; gate Copper; departure Monday. Its spare pump was enabled in revision 1 but disabled in revision 2. Its cargo is not refrigerated; local rover is quarantined. These records do not concern Expedition Alder.\nUnrelated Depot D013 archive: coordinator Agent013; gate Copper; departure Monday. Its spare pump was enabled in revision 1 but disabled in revision 2. Its cargo is not refrigerated; local rover is quarantined. These records do not concern Expedition Alder.\nUnrelated Depot D014 archive: coordinator Agent014; gate Copper; departure Monday. Its spare pump was enabled in revision 1 but disabled in revision 2. Its cargo is not refrigerated; local rover is quarantined. These records do not concern Expedition Alder.\nUnrelated Depot D015 archive: coordinator Agent015; gate Copper; departure Monday. Its spare pump was enabled in revision 1 but disabled in revision 2. Its cargo is not refrigerated; local rover is quarantined. These records do not concern Expedition Alder.\nUnrelated Depot D016 archive: coordinator Agent016; gate Copper; departure Monday. Its spare pump was enabled in revision 1 but disabled in revision 2. Its cargo is not refrigerated; local rover is quarantined. These records do not concern Expedition Alder.\nUnrelated Depot D017 archive: coordinator Agent017; gate Copper; departure Monday. Its spare pump was enabled in revision 1 but disabled in revision 2. Its cargo is not refrigerated; local rover is quarantined. These records do not concern Expedition Alder.\nUnrelated Depot D018 archive: coordinator Agent018; gate Copper; departure Monday. Its spare pump was enabled in revision 1 but disabled in revision 2. Its cargo is not refrigerated; local rover is quarantined. These records do not concern Expedition Alder.\nUnrelated Depot D019 archive: coordinator Agent019; gate Copper; departure Monday. Its spare pump was enabled in revision 1 but disabled in revision 2. Its cargo is not refrigerated; local rover is quarantined. These records do not concern Expedition Alder.\nUnrelated Depot D020 archive: coordinator Agent020; gate Copper; departure Monday. Its spare pump was enabled in revision 1 but disabled in revision 2. Its cargo is not refrigerated; local rover is quarantined. These records do not concern Expedition Alder.\nUnrelated Depot D021 archive: coordinator Agent021; gate Copper; departure Monday. Its spare pump was enabled in revision 1 but disabled in revision 2. Its cargo is not refrigerated; local rover is quarantined. These records do not concern Expedition Alder.\nFICTIONAL EXPEDITION ALDER: current operational bulletin, revision 7.\nOnly facts about Expedition Alder answer the questions. Other depots are unrelated.\nRevision 2 (SUPERSEDED): Mara coordinated; gate Amber; departure Tuesday; backup enabled.\nRevision 7 (CURRENT): Lyn is coordinator, not Oren; gate Indigo replaces Amber.\nDeparture is Thursday, not Tuesday. Backup is NOT enabled. A proposal to enable it Friday is not approved and is not current policy.\nCurrent Alder rovers (all other rover facts are obsolete):\nKestrel: water-sealed yes; quarantined no; charge 70 percent.\nMarten: water-sealed yes; quarantined yes; charge 95 percent.\nPlover: water-sealed no; quarantined no; charge 90 percent.\nSwift: water-sealed yes; quarantined no; charge 40 percent.\nCurrent Alder samples:\nQuartz: refrigerated yes; spoiled no; transfer permit valid.\nJasper: refrigerated yes; spoiled no; transfer permit revoked, not valid.\nOpal: refrigerated no; spoiled no; transfer permit valid.\nFlint: refrigerated yes; spoiled yes; transfer permit valid.\nCurrent Alder operators:\nIvo: on duty yes; certified yes; suspended no.\nNia: on duty yes; certified yes; suspended yes (old clearance is superseded).\nUma: on duty no; certified yes; suspended no.\nTeo: on duty yes; certified no; suspended no.\nCurrent Alder transfer slots:\nS1: west dock; daylight yes; canceled yes.\nS2: east dock; daylight yes; canceled no.\nS3: west dock; daylight yes; canceled no.\nS4: west dock; daylight no; canceled no.\nEND OF CURRENT ALDER BULLETIN.\nUnrelated Depot D022 archive: coordinator Agent022; gate Copper; departure Monday. Its spare pump was enabled in revision 1 but disabled in revision 2. Its cargo is not refrigerated; local rover is quarantined. These records do not concern Expedition Alder.\nUnrelated Depot D023 archive: coordinator Agent023; gate Copper; departure Monday. Its spare pump was enabled in revision 1 but disabled in revision 2. Its cargo is not refrigerated; local rover is quarantined. These records do not concern Expedition Alder.\nUnrelated Depot D024 archive: coordinator Agent024; gate Copper; departure Monday. Its spare pump was enabled in revision 1 but disabled in revision 2. Its cargo is not refrigerated; local rover is quarantined. These records do not concern Expedition Alder.\nUnrelated Depot D025 archive: coordinator Agent025; gate Copper; departure Monday. Its spare pump was enabled in revision 1 but disabled in revision 2. Its cargo is not refrigerated; local rover is quarantined. These records do not concern Expedition Alder.\nUnrelated Depot D026 archive: coordinator Agent026; gate Copper; departure Monday. Its spare pump was enabled in revision 1 but disabled in revision 2. Its cargo is not refrigerated; local rover is quarantined. These records do not concern Expedition Alder.\nUnrelated Depot D027 archive: coordinator Agent027; gate Copper; departure Monday. Its spare pump was enabled in revision 1 but disabled in revision 2. Its cargo is not refrigerated; local rover is quarantined. These records do not concern Expedition Alder.\nUnrelated Depot D028 archive: coordinator Agent028; gate Copper; departure Monday. Its spare pump was enabled in revision 1 but disabled in revision 2. Its cargo is not refrigerated; local rover is quarantined. These records do not concern Expedition Alder.\nUnrelated Depot D029 archive: coordinator Agent029; gate Copper; departure Monday. Its spare pump was enabled in revision 1 but disabled in revision 2. Its cargo is not refrigerated; local rover is quarantined. These records do not concern Expedition Alder.\nUnrelated Depot D030 archive: coordinator Agent030; gate Copper; departure Monday. Its spare pump was enabled in revision 1 but disabled in revision 2. Its cargo is not refrigerated; local rover is quarantined. These records do not concern Expedition Alder.\nUnrelated Depot D031 archive: coordinator Agent031; gate Copper; departure Monday. Its spare pump was enabled in revision 1 but disabled in revision 2. Its cargo is not refrigerated; local rover is quarantined. These records do not concern Expedition Alder.\nUnrelated Depot D032 archive: coordinator Agent032; gate Copper; departure Monday. Its spare pump was enabled in revision 1 but disabled in revision 2. Its cargo is not refrigerated; local rover is quarantined. These records do not concern Expedition Alder.\nUnrelated Depot D033 archive: coordinator Agent033; gate Copper; departure Monday. Its spare pump was enabled in revision 1 but disabled in revision 2. Its cargo is not refrigerated; local rover is quarantined. These records do not concern Expedition Alder.\nUnrelated Depot D034 archive: coordinator Agent034; gate Copper; departure Monday. Its spare pump was enabled in revision 1 but disabled in revision 2. Its cargo is not refrigerated; local rover is quarantined. These records do not concern Expedition Alder.\nUnrelated Depot D035 archive: coordinator Agent035; gate Copper; departure Monday. Its spare pump was enabled in revision 1 but disabled in revision 2. Its cargo is not refrigerated; local rover is quarantined. These records do not concern Expedition Alder.\nUnrelated Depot D036 archive: coordinator Agent036; gate Copper; departure Monday. Its spare pump was enabled in revision 1 but disabled in revision 2. Its cargo is not refrigerated; local rover is quarantined. These records do not concern Expedition Alder.\nUnrelated Depot D037 archive: coordinator Agent037; gate Copper; departure Monday. Its spare pump was enabled in revision 1 but disabled in revision 2. Its cargo is not refrigerated; local rover is quarantined. These records do not concern Expedition Alder.\nUnrelated Depot D038 archive: coordinator Agent038; gate Copper; departure Monday. Its spare pump was enabled in revision 1 but disabled in revision 2. Its cargo is not refrigerated; local rover is quarantined. These records do not concern Expedition Alder.\nUnrelated Depot D039 archive: coordinator Agent039; gate Copper; departure Monday. Its spare pump was enabled in revision 1 but disabled in revision 2. Its cargo is not refrigerated; local rover is quarantined. These records do not concern Expedition Alder.\nUnrelated Depot D040 archive: coordinator Agent040; gate Copper; departure Monday. Its spare pump was enabled in revision 1 but disabled in revision 2. Its cargo is not refrigerated; local rover is quarantined. These records do not concern Expedition Alder.\nUnrelated Depot D041 archive: coordinator Agent041; gate Copper; departure Monday. Its spare pump was enabled in revision 1 but disabled in revision 2. Its cargo is not refrigerated; local rover is quarantined. These records do not concern Expedition Alder.\nUnrelated Depot D042 archive: coordinator Agent042; gate Copper; departure Monday. Its spare pump was enabled in revision 1 but disabled in revision 2. Its cargo is not refrigerated; local rover is quarantined. These records do not concern Expedition Alder.\nUnrelated Depot D043 archive: coordinator Agent043; gate Copper; departure Monday. Its spare pump was enabled in revision 1 but disabled in revision 2. Its cargo is not refrigerated; local rover is quarantined. These records do not concern Expedition Alder."
+      }
+    },
+    "questions": {
+      "coordinator": {
+        "type": "choice",
+        "instructions": "For Expedition Alder, who is the CURRENT coordinator, ignoring superseded assignments and explicitly excluded names?",
+        "criteria": {
+          "mara": "mara",
+          "lyn": "lyn",
+          "oren": "oren",
+          "none": "No candidate satisfies the question."
+        }
+      },
+      "gate": {
+        "type": "choice",
+        "instructions": "For Expedition Alder, which gate is CURRENTLY assigned after the replacement, not the superseded gate?",
+        "criteria": {
+          "amber": "amber",
+          "copper": "copper",
+          "indigo": "indigo",
+          "none": "No candidate satisfies the question."
+        }
+      },
+      "backup": {
+        "type": "choice",
+        "instructions": "For Expedition Alder, is backup CURRENTLY enabled or disabled? An unapproved future proposal does not change the current policy.",
+        "criteria": {
+          "enabled": "enabled",
+          "disabled": "disabled",
+          "unknown": "unknown"
+        }
+      },
+      "departure": {
+        "type": "choice",
+        "instructions": "For Expedition Alder, what is the CURRENT departure day, not the superseded day?",
+        "criteria": {
+          "monday": "monday",
+          "tuesday": "tuesday",
+          "thursday": "thursday",
+          "friday": "friday"
+        }
+      },
+      "rover": {
+        "type": "choice",
+        "instructions": "Select the current Alder rover that is water-sealed AND not quarantined AND has at least 60 percent charge. All three conditions are required.",
+        "criteria": {
+          "kestrel": "kestrel",
+          "marten": "marten",
+          "plover": "plover",
+          "swift": "swift",
+          "none": "No candidate satisfies the question."
+        }
+      },
+      "sample": {
+        "type": "choice",
+        "instructions": "Select the current Alder sample that is refrigerated AND not spoiled AND has a currently valid transfer permit. A revoked permit is not valid.",
+        "criteria": {
+          "quartz": "quartz",
+          "jasper": "jasper",
+          "opal": "opal",
+          "flint": "flint",
+          "none": "No candidate satisfies the question."
+        }
+      },
+      "operator": {
+        "type": "choice",
+        "instructions": "Select the current Alder operator who is on duty AND certified AND not suspended. Superseded clearance does not cancel a current suspension.",
+        "criteria": {
+          "ivo": "ivo",
+          "nia": "nia",
+          "uma": "uma",
+          "teo": "teo",
+          "none": "No candidate satisfies the question."
+        }
+      },
+      "slot": {
+        "type": "choice",
+        "instructions": "Select the current Alder transfer slot at the west dock AND in daylight AND not canceled. All three conditions are required.",
+        "criteria": {
+          "s1": "s1",
+          "s2": "s2",
+          "s3": "s3",
+          "s4": "s4",
+          "none": "No candidate satisfies the question."
+        }
+      }
+    },
+    "gold": {
+      "coordinator": "lyn",
+      "gate": "indigo",
+      "backup": "disabled",
+      "departure": "thursday",
+      "rover": "kestrel",
+      "sample": "quartz",
+      "operator": "ivo",
+      "slot": "s3"
+    }
+  }
+}

@@ -1,0 +1,11 @@
+test_oracle_failures_denominators_and_completion_latency (test_study.AggregationTests) ... ok
+test_cli_help_is_offline_and_discloses_explicit_actions (test_study.CliTests) ... ok
+test_freeze_rejects_tampering_and_offline_execution_saves_safe_summary (test_study.FreezeTests) ... ok
+test_scheduler_observes_completion_and_bounds_without_network (test_study.RunnerTests) ... ok
+test_seeded_plan_freezes_all_conditions_within_bounds (test_study.ScheduleTests) ... ok
+test_original_workload_has_eight_independent_questions (test_study.WorkloadTests) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 14.405s
+
+OK

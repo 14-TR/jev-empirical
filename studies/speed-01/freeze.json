@@ -1,0 +1,23 @@
+{
+  "frozen_at_utc": "2026-09-20T01:45:23.781181+00:00",
+  "plan_sha256": "15229c3cb11a286d0bc925686ca96951baf7e47a4f262841956ecba7c9825279",
+  "source_sha256": {
+    "jev_bench/__init__.py": "104cf8d9d93204a50bc4818230568af0a475d5020d1f97f772484dfe8fb3a8eb",
+    "jev_bench/core.py": "3b64ef1e7cc6d3985754e88392c9b1dfeed837f975b12b7598f5247da0be10a4",
+    "jev_bench/transport.py": "a4fc20dcad5182ac8a5ac58d8c527f24f53bc970cf115eac67c70820e9053fae",
+    "run_study.py": "aebe3979f74d20814fdcd4f908261ba7c542ac913980c815992f3392772d13db",
+    "study.py": "cd78ad87f130d4d3c58f140ab6cf16ce87c33339d866654106448eca9ab762d7",
+    "test_study.py": "dfdaa210537f6b2e01142f6882a2fb5692e00dc65b3dfdb2c9b8b79630bbfc03"
+  },
+  "python": "3.9.6",
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "vendored_from": "/Users/tr/Projects/jev-empirical/src/jev_bench",
+  "docs_read": [
+    "https://docs.typesafe.ai/llms.txt",
+    "https://docs.typesafe.ai/api.md",
+    "https://docs.typesafe.ai/models.md",
+    "https://docs.typesafe.ai/primitives/choice.md",
+    "https://docs.typesafe.ai/patterns/fan-out.md",
+    "https://docs.typesafe.ai/cookbooks/pre_parsed_value_extraction_cookbook.md"
+  ]
+}

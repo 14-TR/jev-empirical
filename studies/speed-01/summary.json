@@ -1,0 +1,1619 @@
+{
+  "conditions": [
+    {
+      "context": "long",
+      "strategy": "batch",
+      "makespan_s": [
+        0.3700044999999994,
+        0.349628083999999,
+        0.32522141699999807
+      ],
+      "call_latency_s": [
+        0.3691303750000001,
+        0.3486385829999996,
+        0.32430949999999825
+      ],
+      "question_ready_s": [
+        0.36934970899999975,
+        0.36934970899999975,
+        0.36934970899999975,
+        0.36934970899999975,
+        0.36934970899999975,
+        0.36934970899999975,
+        0.36934970899999975,
+        0.36934970899999975,
+        0.3489566249999996,
+        0.3489566249999996,
+        0.3489566249999996,
+        0.3489566249999996,
+        0.3489566249999996,
+        0.3489566249999996,
+        0.3489566249999996,
+        0.3489566249999996,
+        0.3245752919999987,
+        0.3245752919999987,
+        0.3245752919999987,
+        0.3245752919999987,
+        0.3245752919999987,
+        0.3245752919999987,
+        0.3245752919999987,
+        0.3245752919999987
+      ],
+      "correct": 24,
+      "wrong": 0,
+      "missing": 0,
+      "invalid": 0,
+      "expected_answers": 24,
+      "calls": 3,
+      "failed_calls": 0,
+      "input_tokens": 12636,
+      "output_tokens": 1176,
+      "usage_missing_calls": 0,
+      "fully_correct_workloads": 3,
+      "workloads": 3,
+      "answer_records": [
+        {
+          "repetition": 1,
+          "qid": "coordinator",
+          "status": "correct",
+          "predicted": "lyn",
+          "gold": "lyn",
+          "ready_s": 0.36934970899999975
+        },
+        {
+          "repetition": 1,
+          "qid": "gate",
+          "status": "correct",
+          "predicted": "indigo",
+          "gold": "indigo",
+          "ready_s": 0.36934970899999975
+        },
+        {
+          "repetition": 1,
+          "qid": "backup",
+          "status": "correct",
+          "predicted": "disabled",
+          "gold": "disabled",
+          "ready_s": 0.36934970899999975
+        },
+        {
+          "repetition": 1,
+          "qid": "departure",
+          "status": "correct",
+          "predicted": "thursday",
+          "gold": "thursday",
+          "ready_s": 0.36934970899999975
+        },
+        {
+          "repetition": 1,
+          "qid": "rover",
+          "status": "correct",
+          "predicted": "kestrel",
+          "gold": "kestrel",
+          "ready_s": 0.36934970899999975
+        },
+        {
+          "repetition": 1,
+          "qid": "sample",
+          "status": "correct",
+          "predicted": "quartz",
+          "gold": "quartz",
+          "ready_s": 0.36934970899999975
+        },
+        {
+          "repetition": 1,
+          "qid": "operator",
+          "status": "correct",
+          "predicted": "ivo",
+          "gold": "ivo",
+          "ready_s": 0.36934970899999975
+        },
+        {
+          "repetition": 1,
+          "qid": "slot",
+          "status": "correct",
+          "predicted": "s3",
+          "gold": "s3",
+          "ready_s": 0.36934970899999975
+        },
+        {
+          "repetition": 2,
+          "qid": "coordinator",
+          "status": "correct",
+          "predicted": "lyn",
+          "gold": "lyn",
+          "ready_s": 0.3489566249999996
+        },
+        {
+          "repetition": 2,
+          "qid": "gate",
+          "status": "correct",
+          "predicted": "indigo",
+          "gold": "indigo",
+          "ready_s": 0.3489566249999996
+        },
+        {
+          "repetition": 2,
+          "qid": "backup",
+          "status": "correct",
+          "predicted": "disabled",
+          "gold": "disabled",
+          "ready_s": 0.3489566249999996
+        },
+        {
+          "repetition": 2,
+          "qid": "departure",
+          "status": "correct",
+          "predicted": "thursday",
+          "gold": "thursday",
+          "ready_s": 0.3489566249999996
+        },
+        {
+          "repetition": 2,
+          "qid": "rover",
+          "status": "correct",
+          "predicted": "kestrel",
+          "gold": "kestrel",
+          "ready_s": 0.3489566249999996
+        },
+        {
+          "repetition": 2,
+          "qid": "sample",
+          "status": "correct",
+          "predicted": "quartz",
+          "gold": "quartz",
+          "ready_s": 0.3489566249999996
+        },
+        {
+          "repetition": 2,
+          "qid": "operator",
+          "status": "correct",
+          "predicted": "ivo",
+          "gold": "ivo",
+          "ready_s": 0.3489566249999996
+        },
+        {
+          "repetition": 2,
+          "qid": "slot",
+          "status": "correct",
+          "predicted": "s3",
+          "gold": "s3",
+          "ready_s": 0.3489566249999996
+        },
+        {
+          "repetition": 3,
+          "qid": "coordinator",
+          "status": "correct",
+          "predicted": "lyn",
+          "gold": "lyn",
+          "ready_s": 0.3245752919999987
+        },
+        {
+          "repetition": 3,
+          "qid": "gate",
+          "status": "correct",
+          "predicted": "indigo",
+          "gold": "indigo",
+          "ready_s": 0.3245752919999987
+        },
+        {
+          "repetition": 3,
+          "qid": "backup",
+          "status": "correct",
+          "predicted": "disabled",
+          "gold": "disabled",
+          "ready_s": 0.3245752919999987
+        },
+        {
+          "repetition": 3,
+          "qid": "departure",
+          "status": "correct",
+          "predicted": "thursday",
+          "gold": "thursday",
+          "ready_s": 0.3245752919999987
+        },
+        {
+          "repetition": 3,
+          "qid": "rover",
+          "status": "correct",
+          "predicted": "kestrel",
+          "gold": "kestrel",
+          "ready_s": 0.3245752919999987
+        },
+        {
+          "repetition": 3,
+          "qid": "sample",
+          "status": "correct",
+          "predicted": "quartz",
+          "gold": "quartz",
+          "ready_s": 0.3245752919999987
+        },
+        {
+          "repetition": 3,
+          "qid": "operator",
+          "status": "correct",
+          "predicted": "ivo",
+          "gold": "ivo",
+          "ready_s": 0.3245752919999987
+        },
+        {
+          "repetition": 3,
+          "qid": "slot",
+          "status": "correct",
+          "predicted": "s3",
+          "gold": "s3",
+          "ready_s": 0.3245752919999987
+        }
+      ],
+      "makespan_s_median": 0.349628083999999,
+      "call_latency_s_median": 0.3486385829999996,
+      "question_ready_s_median": 0.3489566249999996,
+      "list_price_estimate_usd": 0.000530712
+    },
+    {
+      "context": "long",
+      "strategy": "concurrency4",
+      "makespan_s": [
+        0.749702708,
+        0.7220431250000008,
+        0.7797485829999999
+      ],
+      "call_latency_s": [
+        0.2897285409999997,
+        0.2969829580000001,
+        0.35927675000000026,
+        0.3841084170000002,
+        0.31342412500000005,
+        0.3222029590000002,
+        0.3554489580000002,
+        0.43423237499999967,
+        0.3109187079999991,
+        0.32238258299999956,
+        0.3606892500000001,
+        0.3635167080000006,
+        0.32218029199999876,
+        0.30925604199999945,
+        0.33189945899999884,
+        0.35469641600000124,
+        0.2817527079999991,
+        0.32846699999999984,
+        0.4041347920000007,
+        0.41028662500000124,
+        0.31870883399999883,
+        0.27978337500000094,
+        0.33537841700000115,
+        0.35557387500000104
+      ],
+      "question_ready_s": [
+        0.3843962920000008,
+        0.29351383300000045,
+        0.36554650000000066,
+        0.3056908330000008,
+        0.7495337080000004,
+        0.6321600000000007,
+        0.7297176250000001,
+        0.7159051670000007,
+        0.36096070900000043,
+        0.31465862499999986,
+        0.32866679199999993,
+        0.3725682920000004,
+        0.6469188339999992,
+        0.6475433339999999,
+        0.7219060000000006,
+        0.7138815839999992,
+        0.40429862499999913,
+        0.3309074999999986,
+        0.4145786670000007,
+        0.28767124999999893,
+        0.6105660419999985,
+        0.6200708749999997,
+        0.7490541250000007,
+        0.7794571670000003
+      ],
+      "correct": 24,
+      "wrong": 0,
+      "missing": 0,
+      "invalid": 0,
+      "expected_answers": 24,
+      "calls": 24,
+      "failed_calls": 0,
+      "input_tokens": 83637,
+      "output_tokens": 1239,
+      "usage_missing_calls": 0,
+      "fully_correct_workloads": 3,
+      "workloads": 3,
+      "answer_records": [
+        {
+          "repetition": 1,
+          "qid": "coordinator",
+          "status": "correct",
+          "predicted": "lyn",
+          "gold": "lyn",
+          "ready_s": 0.3843962920000008
+        },
+        {
+          "repetition": 1,
+          "qid": "gate",
+          "status": "correct",
+          "predicted": "indigo",
+          "gold": "indigo",
+          "ready_s": 0.29351383300000045
+        },
+        {
+          "repetition": 1,
+          "qid": "backup",
+          "status": "correct",
+          "predicted": "disabled",
+          "gold": "disabled",
+          "ready_s": 0.36554650000000066
+        },
+        {
+          "repetition": 1,
+          "qid": "departure",
+          "status": "correct",
+          "predicted": "thursday",
+          "gold": "thursday",
+          "ready_s": 0.3056908330000008
+        },
+        {
+          "repetition": 1,
+          "qid": "rover",
+          "status": "correct",
+          "predicted": "kestrel",
+          "gold": "kestrel",
+          "ready_s": 0.7495337080000004
+        },
+        {
+          "repetition": 1,
+          "qid": "sample",
+          "status": "correct",
+          "predicted": "quartz",
+          "gold": "quartz",
+          "ready_s": 0.6321600000000007
+        },
+        {
+          "repetition": 1,
+          "qid": "operator",
+          "status": "correct",
+          "predicted": "ivo",
+          "gold": "ivo",
+          "ready_s": 0.7297176250000001
+        },
+        {
+          "repetition": 1,
+          "qid": "slot",
+          "status": "correct",
+          "predicted": "s3",
+          "gold": "s3",
+          "ready_s": 0.7159051670000007
+        },
+        {
+          "repetition": 2,
+          "qid": "coordinator",
+          "status": "correct",
+          "predicted": "lyn",
+          "gold": "lyn",
+          "ready_s": 0.36096070900000043
+        },
+        {
+          "repetition": 2,
+          "qid": "gate",
+          "status": "correct",
+          "predicted": "indigo",
+          "gold": "indigo",
+          "ready_s": 0.31465862499999986
+        },
+        {
+          "repetition": 2,
+          "qid": "backup",
+          "status": "correct",
+          "predicted": "disabled",
+          "gold": "disabled",
+          "ready_s": 0.32866679199999993
+        },
+        {
+          "repetition": 2,
+          "qid": "departure",
+          "status": "correct",
+          "predicted": "thursday",
+          "gold": "thursday",
+          "ready_s": 0.3725682920000004
+        },
+        {
+          "repetition": 2,
+          "qid": "rover",
+          "status": "correct",
+          "predicted": "kestrel",
+          "gold": "kestrel",
+          "ready_s": 0.6469188339999992
+        },
+        {
+          "repetition": 2,
+          "qid": "sample",
+          "status": "correct",
+          "predicted": "quartz",
+          "gold": "quartz",
+          "ready_s": 0.6475433339999999
+        },
+        {
+          "repetition": 2,
+          "qid": "operator",
+          "status": "correct",
+          "predicted": "ivo",
+          "gold": "ivo",
+          "ready_s": 0.7219060000000006
+        },
+        {
+          "repetition": 2,
+          "qid": "slot",
+          "status": "correct",
+          "predicted": "s3",
+          "gold": "s3",
+          "ready_s": 0.7138815839999992
+        },
+        {
+          "repetition": 3,
+          "qid": "coordinator",
+          "status": "correct",
+          "predicted": "lyn",
+          "gold": "lyn",
+          "ready_s": 0.40429862499999913
+        },
+        {
+          "repetition": 3,
+          "qid": "gate",
+          "status": "correct",
+          "predicted": "indigo",
+          "gold": "indigo",
+          "ready_s": 0.3309074999999986
+        },
+        {
+          "repetition": 3,
+          "qid": "backup",
+          "status": "correct",
+          "predicted": "disabled",
+          "gold": "disabled",
+          "ready_s": 0.4145786670000007
+        },
+        {
+          "repetition": 3,
+          "qid": "departure",
+          "status": "correct",
+          "predicted": "thursday",
+          "gold": "thursday",
+          "ready_s": 0.28767124999999893
+        },
+        {
+          "repetition": 3,
+          "qid": "rover",
+          "status": "correct",
+          "predicted": "kestrel",
+          "gold": "kestrel",
+          "ready_s": 0.6105660419999985
+        },
+        {
+          "repetition": 3,
+          "qid": "sample",
+          "status": "correct",
+          "predicted": "quartz",
+          "gold": "quartz",
+          "ready_s": 0.6200708749999997
+        },
+        {
+          "repetition": 3,
+          "qid": "operator",
+          "status": "correct",
+          "predicted": "ivo",
+          "gold": "ivo",
+          "ready_s": 0.7490541250000007
+        },
+        {
+          "repetition": 3,
+          "qid": "slot",
+          "status": "correct",
+          "predicted": "s3",
+          "gold": "s3",
+          "ready_s": 0.7794571670000003
+        }
+      ],
+      "makespan_s_median": 0.749702708,
+      "call_latency_s_median": 0.33018322949999934,
+      "question_ready_s_median": 0.5125723544999996,
+      "list_price_estimate_usd": 0.0035127540000000003
+    },
+    {
+      "context": "long",
+      "strategy": "serial",
+      "makespan_s": [
+        2.5869904580000003,
+        2.6354848329999996,
+        2.5511182920000017
+      ],
+      "call_latency_s": [
+        0.31236874999999964,
+        0.3169520829999999,
+        0.30771795800000046,
+        0.3316410420000002,
+        0.29745016700000004,
+        0.36927395799999996,
+        0.34763279199999975,
+        0.2977129999999999,
+        0.3781404999999989,
+        0.3497323750000003,
+        0.348499125,
+        0.30571962500000005,
+        0.3475049170000002,
+        0.2829444580000011,
+        0.32006666699999897,
+        0.2961740420000005,
+        0.35725200000000257,
+        0.30355512499999904,
+        0.33875812499999824,
+        0.34388662499999967,
+        0.277691082999997,
+        0.309484666000003,
+        0.3124375000000015,
+        0.3013568329999998
+      ],
+      "question_ready_s": [
+        0.31254912499999987,
+        0.6302408329999998,
+        0.9387366250000002,
+        1.2711889170000004,
+        1.5694076249999998,
+        1.9395245830000003,
+        2.287950042,
+        2.5863775419999997,
+        0.3783347079999988,
+        0.7288969170000001,
+        1.0782317499999987,
+        1.3847880830000001,
+        1.733127542,
+        2.016960458,
+        2.337843124999999,
+        2.6349276669999995,
+        0.3575155420000016,
+        0.6619183339999992,
+        1.0015115839999993,
+        1.3462125,
+        1.6247430419999986,
+        1.9350116250000013,
+        2.2482791669999997,
+        2.5505366669999994
+      ],
+      "correct": 24,
+      "wrong": 0,
+      "missing": 0,
+      "invalid": 0,
+      "expected_answers": 24,
+      "calls": 24,
+      "failed_calls": 0,
+      "input_tokens": 83637,
+      "output_tokens": 1239,
+      "usage_missing_calls": 0,
+      "fully_correct_workloads": 3,
+      "workloads": 3,
+      "answer_records": [
+        {
+          "repetition": 1,
+          "qid": "coordinator",
+          "status": "correct",
+          "predicted": "lyn",
+          "gold": "lyn",
+          "ready_s": 0.31254912499999987
+        },
+        {
+          "repetition": 1,
+          "qid": "gate",
+          "status": "correct",
+          "predicted": "indigo",
+          "gold": "indigo",
+          "ready_s": 0.6302408329999998
+        },
+        {
+          "repetition": 1,
+          "qid": "backup",
+          "status": "correct",
+          "predicted": "disabled",
+          "gold": "disabled",
+          "ready_s": 0.9387366250000002
+        },
+        {
+          "repetition": 1,
+          "qid": "departure",
+          "status": "correct",
+          "predicted": "thursday",
+          "gold": "thursday",
+          "ready_s": 1.2711889170000004
+        },
+        {
+          "repetition": 1,
+          "qid": "rover",
+          "status": "correct",
+          "predicted": "kestrel",
+          "gold": "kestrel",
+          "ready_s": 1.5694076249999998
+        },
+        {
+          "repetition": 1,
+          "qid": "sample",
+          "status": "correct",
+          "predicted": "quartz",
+          "gold": "quartz",
+          "ready_s": 1.9395245830000003
+        },
+        {
+          "repetition": 1,
+          "qid": "operator",
+          "status": "correct",
+          "predicted": "ivo",
+          "gold": "ivo",
+          "ready_s": 2.287950042
+        },
+        {
+          "repetition": 1,
+          "qid": "slot",
+          "status": "correct",
+          "predicted": "s3",
+          "gold": "s3",
+          "ready_s": 2.5863775419999997
+        },
+        {
+          "repetition": 2,
+          "qid": "coordinator",
+          "status": "correct",
+          "predicted": "lyn",
+          "gold": "lyn",
+          "ready_s": 0.3783347079999988
+        },
+        {
+          "repetition": 2,
+          "qid": "gate",
+          "status": "correct",
+          "predicted": "indigo",
+          "gold": "indigo",
+          "ready_s": 0.7288969170000001
+        },
+        {
+          "repetition": 2,
+          "qid": "backup",
+          "status": "correct",
+          "predicted": "disabled",
+          "gold": "disabled",
+          "ready_s": 1.0782317499999987
+        },
+        {
+          "repetition": 2,
+          "qid": "departure",
+          "status": "correct",
+          "predicted": "thursday",
+          "gold": "thursday",
+          "ready_s": 1.3847880830000001
+        },
+        {
+          "repetition": 2,
+          "qid": "rover",
+          "status": "correct",
+          "predicted": "kestrel",
+          "gold": "kestrel",
+          "ready_s": 1.733127542
+        },
+        {
+          "repetition": 2,
+          "qid": "sample",
+          "status": "correct",
+          "predicted": "quartz",
+          "gold": "quartz",
+          "ready_s": 2.016960458
+        },
+        {
+          "repetition": 2,
+          "qid": "operator",
+          "status": "correct",
+          "predicted": "ivo",
+          "gold": "ivo",
+          "ready_s": 2.337843124999999
+        },
+        {
+          "repetition": 2,
+          "qid": "slot",
+          "status": "correct",
+          "predicted": "s3",
+          "gold": "s3",
+          "ready_s": 2.6349276669999995
+        },
+        {
+          "repetition": 3,
+          "qid": "coordinator",
+          "status": "correct",
+          "predicted": "lyn",
+          "gold": "lyn",
+          "ready_s": 0.3575155420000016
+        },
+        {
+          "repetition": 3,
+          "qid": "gate",
+          "status": "correct",
+          "predicted": "indigo",
+          "gold": "indigo",
+          "ready_s": 0.6619183339999992
+        },
+        {
+          "repetition": 3,
+          "qid": "backup",
+          "status": "correct",
+          "predicted": "disabled",
+          "gold": "disabled",
+          "ready_s": 1.0015115839999993
+        },
+        {
+          "repetition": 3,
+          "qid": "departure",
+          "status": "correct",
+          "predicted": "thursday",
+          "gold": "thursday",
+          "ready_s": 1.3462125
+        },
+        {
+          "repetition": 3,
+          "qid": "rover",
+          "status": "correct",
+          "predicted": "kestrel",
+          "gold": "kestrel",
+          "ready_s": 1.6247430419999986
+        },
+        {
+          "repetition": 3,
+          "qid": "sample",
+          "status": "correct",
+          "predicted": "quartz",
+          "gold": "quartz",
+          "ready_s": 1.9350116250000013
+        },
+        {
+          "repetition": 3,
+          "qid": "operator",
+          "status": "correct",
+          "predicted": "ivo",
+          "gold": "ivo",
+          "ready_s": 2.2482791669999997
+        },
+        {
+          "repetition": 3,
+          "qid": "slot",
+          "status": "correct",
+          "predicted": "s3",
+          "gold": "s3",
+          "ready_s": 2.5505366669999994
+        }
+      ],
+      "makespan_s_median": 2.5869904580000003,
+      "call_latency_s_median": 0.3146947915000007,
+      "question_ready_s_median": 1.477097854,
+      "list_price_estimate_usd": 0.0035127540000000003
+    },
+    {
+      "context": "short",
+      "strategy": "batch",
+      "makespan_s": [
+        0.322707459,
+        0.35153208400000047,
+        0.31390583299999975
+      ],
+      "call_latency_s": [
+        0.320930167,
+        0.3507387080000015,
+        0.31308012499999904
+      ],
+      "question_ready_s": [
+        0.322178709,
+        0.322178709,
+        0.322178709,
+        0.322178709,
+        0.322178709,
+        0.322178709,
+        0.322178709,
+        0.322178709,
+        0.3509879170000012,
+        0.3509879170000012,
+        0.3509879170000012,
+        0.3509879170000012,
+        0.3509879170000012,
+        0.3509879170000012,
+        0.3509879170000012,
+        0.3509879170000012,
+        0.31330079099999963,
+        0.31330079099999963,
+        0.31330079099999963,
+        0.31330079099999963,
+        0.31330079099999963,
+        0.31330079099999963,
+        0.31330079099999963,
+        0.31330079099999963
+      ],
+      "correct": 24,
+      "wrong": 0,
+      "missing": 0,
+      "invalid": 0,
+      "expected_answers": 24,
+      "calls": 3,
+      "failed_calls": 0,
+      "input_tokens": 4452,
+      "output_tokens": 1176,
+      "usage_missing_calls": 0,
+      "fully_correct_workloads": 3,
+      "workloads": 3,
+      "answer_records": [
+        {
+          "repetition": 1,
+          "qid": "coordinator",
+          "status": "correct",
+          "predicted": "lyn",
+          "gold": "lyn",
+          "ready_s": 0.322178709
+        },
+        {
+          "repetition": 1,
+          "qid": "gate",
+          "status": "correct",
+          "predicted": "indigo",
+          "gold": "indigo",
+          "ready_s": 0.322178709
+        },
+        {
+          "repetition": 1,
+          "qid": "backup",
+          "status": "correct",
+          "predicted": "disabled",
+          "gold": "disabled",
+          "ready_s": 0.322178709
+        },
+        {
+          "repetition": 1,
+          "qid": "departure",
+          "status": "correct",
+          "predicted": "thursday",
+          "gold": "thursday",
+          "ready_s": 0.322178709
+        },
+        {
+          "repetition": 1,
+          "qid": "rover",
+          "status": "correct",
+          "predicted": "kestrel",
+          "gold": "kestrel",
+          "ready_s": 0.322178709
+        },
+        {
+          "repetition": 1,
+          "qid": "sample",
+          "status": "correct",
+          "predicted": "quartz",
+          "gold": "quartz",
+          "ready_s": 0.322178709
+        },
+        {
+          "repetition": 1,
+          "qid": "operator",
+          "status": "correct",
+          "predicted": "ivo",
+          "gold": "ivo",
+          "ready_s": 0.322178709
+        },
+        {
+          "repetition": 1,
+          "qid": "slot",
+          "status": "correct",
+          "predicted": "s3",
+          "gold": "s3",
+          "ready_s": 0.322178709
+        },
+        {
+          "repetition": 2,
+          "qid": "coordinator",
+          "status": "correct",
+          "predicted": "lyn",
+          "gold": "lyn",
+          "ready_s": 0.3509879170000012
+        },
+        {
+          "repetition": 2,
+          "qid": "gate",
+          "status": "correct",
+          "predicted": "indigo",
+          "gold": "indigo",
+          "ready_s": 0.3509879170000012
+        },
+        {
+          "repetition": 2,
+          "qid": "backup",
+          "status": "correct",
+          "predicted": "disabled",
+          "gold": "disabled",
+          "ready_s": 0.3509879170000012
+        },
+        {
+          "repetition": 2,
+          "qid": "departure",
+          "status": "correct",
+          "predicted": "thursday",
+          "gold": "thursday",
+          "ready_s": 0.3509879170000012
+        },
+        {
+          "repetition": 2,
+          "qid": "rover",
+          "status": "correct",
+          "predicted": "kestrel",
+          "gold": "kestrel",
+          "ready_s": 0.3509879170000012
+        },
+        {
+          "repetition": 2,
+          "qid": "sample",
+          "status": "correct",
+          "predicted": "quartz",
+          "gold": "quartz",
+          "ready_s": 0.3509879170000012
+        },
+        {
+          "repetition": 2,
+          "qid": "operator",
+          "status": "correct",
+          "predicted": "ivo",
+          "gold": "ivo",
+          "ready_s": 0.3509879170000012
+        },
+        {
+          "repetition": 2,
+          "qid": "slot",
+          "status": "correct",
+          "predicted": "s3",
+          "gold": "s3",
+          "ready_s": 0.3509879170000012
+        },
+        {
+          "repetition": 3,
+          "qid": "coordinator",
+          "status": "correct",
+          "predicted": "lyn",
+          "gold": "lyn",
+          "ready_s": 0.31330079099999963
+        },
+        {
+          "repetition": 3,
+          "qid": "gate",
+          "status": "correct",
+          "predicted": "indigo",
+          "gold": "indigo",
+          "ready_s": 0.31330079099999963
+        },
+        {
+          "repetition": 3,
+          "qid": "backup",
+          "status": "correct",
+          "predicted": "disabled",
+          "gold": "disabled",
+          "ready_s": 0.31330079099999963
+        },
+        {
+          "repetition": 3,
+          "qid": "departure",
+          "status": "correct",
+          "predicted": "thursday",
+          "gold": "thursday",
+          "ready_s": 0.31330079099999963
+        },
+        {
+          "repetition": 3,
+          "qid": "rover",
+          "status": "correct",
+          "predicted": "kestrel",
+          "gold": "kestrel",
+          "ready_s": 0.31330079099999963
+        },
+        {
+          "repetition": 3,
+          "qid": "sample",
+          "status": "correct",
+          "predicted": "quartz",
+          "gold": "quartz",
+          "ready_s": 0.31330079099999963
+        },
+        {
+          "repetition": 3,
+          "qid": "operator",
+          "status": "correct",
+          "predicted": "ivo",
+          "gold": "ivo",
+          "ready_s": 0.31330079099999963
+        },
+        {
+          "repetition": 3,
+          "qid": "slot",
+          "status": "correct",
+          "predicted": "s3",
+          "gold": "s3",
+          "ready_s": 0.31330079099999963
+        }
+      ],
+      "makespan_s_median": 0.322707459,
+      "call_latency_s_median": 0.320930167,
+      "question_ready_s_median": 0.322178709,
+      "list_price_estimate_usd": 0.000186984
+    },
+    {
+      "context": "short",
+      "strategy": "concurrency4",
+      "makespan_s": [
+        0.6255493750000003,
+        0.7315753750000002,
+        0.6254927500000029
+      ],
+      "call_latency_s": [
+        0.29993408300000013,
+        0.31649445899999984,
+        0.3186178339999999,
+        0.36036995800000016,
+        0.266215125,
+        0.30038041699999996,
+        0.28491320799999986,
+        0.25545070800000014,
+        0.26743933399999964,
+        0.29688237500000003,
+        0.31033004200000036,
+        0.38614962499999983,
+        0.2605118329999998,
+        0.31779062500000066,
+        0.3448727079999996,
+        0.33576041700000037,
+        0.3043199159999972,
+        0.32348620900000213,
+        0.32048341700000194,
+        0.32997004199999935,
+        0.24381754099999853,
+        0.2667410419999996,
+        0.2922242080000004,
+        0.289891959000002
+      ],
+      "question_ready_s": [
+        0.3605860000000001,
+        0.31945920900000013,
+        0.324234084,
+        0.308104417,
+        0.617335084,
+        0.618495292,
+        0.6017846250000001,
+        0.6254511250000001,
+        0.297087458,
+        0.3137033330000003,
+        0.3919114160000001,
+        0.27581587500000015,
+        0.6033884160000005,
+        0.5672830830000004,
+        0.6679102910000001,
+        0.7313578330000006,
+        0.3236971670000024,
+        0.32421375000000197,
+        0.3104848330000003,
+        0.3386181669999999,
+        0.6130687080000001,
+        0.6003166670000013,
+        0.6254000420000025,
+        0.591922083
+      ],
+      "correct": 24,
+      "wrong": 0,
+      "missing": 0,
+      "invalid": 0,
+      "expected_answers": 24,
+      "calls": 24,
+      "failed_calls": 0,
+      "input_tokens": 18165,
+      "output_tokens": 1239,
+      "usage_missing_calls": 0,
+      "fully_correct_workloads": 3,
+      "workloads": 3,
+      "answer_records": [
+        {
+          "repetition": 1,
+          "qid": "coordinator",
+          "status": "correct",
+          "predicted": "lyn",
+          "gold": "lyn",
+          "ready_s": 0.3605860000000001
+        },
+        {
+          "repetition": 1,
+          "qid": "gate",
+          "status": "correct",
+          "predicted": "indigo",
+          "gold": "indigo",
+          "ready_s": 0.31945920900000013
+        },
+        {
+          "repetition": 1,
+          "qid": "backup",
+          "status": "correct",
+          "predicted": "disabled",
+          "gold": "disabled",
+          "ready_s": 0.324234084
+        },
+        {
+          "repetition": 1,
+          "qid": "departure",
+          "status": "correct",
+          "predicted": "thursday",
+          "gold": "thursday",
+          "ready_s": 0.308104417
+        },
+        {
+          "repetition": 1,
+          "qid": "rover",
+          "status": "correct",
+          "predicted": "kestrel",
+          "gold": "kestrel",
+          "ready_s": 0.617335084
+        },
+        {
+          "repetition": 1,
+          "qid": "sample",
+          "status": "correct",
+          "predicted": "quartz",
+          "gold": "quartz",
+          "ready_s": 0.618495292
+        },
+        {
+          "repetition": 1,
+          "qid": "operator",
+          "status": "correct",
+          "predicted": "ivo",
+          "gold": "ivo",
+          "ready_s": 0.6017846250000001
+        },
+        {
+          "repetition": 1,
+          "qid": "slot",
+          "status": "correct",
+          "predicted": "s3",
+          "gold": "s3",
+          "ready_s": 0.6254511250000001
+        },
+        {
+          "repetition": 2,
+          "qid": "coordinator",
+          "status": "correct",
+          "predicted": "lyn",
+          "gold": "lyn",
+          "ready_s": 0.297087458
+        },
+        {
+          "repetition": 2,
+          "qid": "gate",
+          "status": "correct",
+          "predicted": "indigo",
+          "gold": "indigo",
+          "ready_s": 0.3137033330000003
+        },
+        {
+          "repetition": 2,
+          "qid": "backup",
+          "status": "correct",
+          "predicted": "disabled",
+          "gold": "disabled",
+          "ready_s": 0.3919114160000001
+        },
+        {
+          "repetition": 2,
+          "qid": "departure",
+          "status": "correct",
+          "predicted": "thursday",
+          "gold": "thursday",
+          "ready_s": 0.27581587500000015
+        },
+        {
+          "repetition": 2,
+          "qid": "rover",
+          "status": "correct",
+          "predicted": "kestrel",
+          "gold": "kestrel",
+          "ready_s": 0.6033884160000005
+        },
+        {
+          "repetition": 2,
+          "qid": "sample",
+          "status": "correct",
+          "predicted": "quartz",
+          "gold": "quartz",
+          "ready_s": 0.5672830830000004
+        },
+        {
+          "repetition": 2,
+          "qid": "operator",
+          "status": "correct",
+          "predicted": "ivo",
+          "gold": "ivo",
+          "ready_s": 0.6679102910000001
+        },
+        {
+          "repetition": 2,
+          "qid": "slot",
+          "status": "correct",
+          "predicted": "s3",
+          "gold": "s3",
+          "ready_s": 0.7313578330000006
+        },
+        {
+          "repetition": 3,
+          "qid": "coordinator",
+          "status": "correct",
+          "predicted": "lyn",
+          "gold": "lyn",
+          "ready_s": 0.3236971670000024
+        },
+        {
+          "repetition": 3,
+          "qid": "gate",
+          "status": "correct",
+          "predicted": "indigo",
+          "gold": "indigo",
+          "ready_s": 0.32421375000000197
+        },
+        {
+          "repetition": 3,
+          "qid": "backup",
+          "status": "correct",
+          "predicted": "disabled",
+          "gold": "disabled",
+          "ready_s": 0.3104848330000003
+        },
+        {
+          "repetition": 3,
+          "qid": "departure",
+          "status": "correct",
+          "predicted": "thursday",
+          "gold": "thursday",
+          "ready_s": 0.3386181669999999
+        },
+        {
+          "repetition": 3,
+          "qid": "rover",
+          "status": "correct",
+          "predicted": "kestrel",
+          "gold": "kestrel",
+          "ready_s": 0.6130687080000001
+        },
+        {
+          "repetition": 3,
+          "qid": "sample",
+          "status": "correct",
+          "predicted": "quartz",
+          "gold": "quartz",
+          "ready_s": 0.6003166670000013
+        },
+        {
+          "repetition": 3,
+          "qid": "operator",
+          "status": "correct",
+          "predicted": "ivo",
+          "gold": "ivo",
+          "ready_s": 0.6254000420000025
+        },
+        {
+          "repetition": 3,
+          "qid": "slot",
+          "status": "correct",
+          "predicted": "s3",
+          "gold": "s3",
+          "ready_s": 0.591922083
+        }
+      ],
+      "makespan_s_median": 0.6255493750000003,
+      "call_latency_s_median": 0.3023501664999986,
+      "question_ready_s_median": 0.47959724950000027,
+      "list_price_estimate_usd": 0.0007629300000000001
+    },
+    {
+      "context": "short",
+      "strategy": "serial",
+      "makespan_s": [
+        2.5769140829999997,
+        2.810521166999999,
+        2.6513294170000012
+      ],
+      "call_latency_s": [
+        0.308643875,
+        0.35720054200000007,
+        0.30317066700000006,
+        0.3357468750000001,
+        0.29096966699999993,
+        0.35821770900000005,
+        0.2958501670000002,
+        0.3215874170000004,
+        0.3634247500000001,
+        0.32540670799999916,
+        0.3468301659999984,
+        0.30756366700000015,
+        0.41013354199999874,
+        0.3789459579999992,
+        0.39563537499999946,
+        0.2770588749999998,
+        0.29684283399999956,
+        0.3359856660000009,
+        0.3589311249999998,
+        0.39773083300000067,
+        0.3113508749999987,
+        0.29794274999999715,
+        0.2929034580000014,
+        0.35401383399999986
+      ],
+      "question_ready_s": [
+        0.308843792,
+        0.6667191250000001,
+        0.970615042,
+        1.307077208,
+        1.5986898749999998,
+        1.957677667,
+        2.254212292,
+        2.57646575,
+        0.36361124999999994,
+        0.6897129999999994,
+        1.0372102499999993,
+        1.3454391670000003,
+        1.7562494169999994,
+        2.1358881249999992,
+        2.5322655419999993,
+        2.810012875,
+        0.297056542,
+        0.633730958000001,
+        0.9933648749999993,
+        1.3917760830000017,
+        1.7037983749999999,
+        2.0024427499999984,
+        2.2960903330000004,
+        2.650815291999999
+      ],
+      "correct": 24,
+      "wrong": 0,
+      "missing": 0,
+      "invalid": 0,
+      "expected_answers": 24,
+      "calls": 24,
+      "failed_calls": 0,
+      "input_tokens": 18165,
+      "output_tokens": 1239,
+      "usage_missing_calls": 0,
+      "fully_correct_workloads": 3,
+      "workloads": 3,
+      "answer_records": [
+        {
+          "repetition": 1,
+          "qid": "coordinator",
+          "status": "correct",
+          "predicted": "lyn",
+          "gold": "lyn",
+          "ready_s": 0.308843792
+        },
+        {
+          "repetition": 1,
+          "qid": "gate",
+          "status": "correct",
+          "predicted": "indigo",
+          "gold": "indigo",
+          "ready_s": 0.6667191250000001
+        },
+        {
+          "repetition": 1,
+          "qid": "backup",
+          "status": "correct",
+          "predicted": "disabled",
+          "gold": "disabled",
+          "ready_s": 0.970615042
+        },
+        {
+          "repetition": 1,
+          "qid": "departure",
+          "status": "correct",
+          "predicted": "thursday",
+          "gold": "thursday",
+          "ready_s": 1.307077208
+        },
+        {
+          "repetition": 1,
+          "qid": "rover",
+          "status": "correct",
+          "predicted": "kestrel",
+          "gold": "kestrel",
+          "ready_s": 1.5986898749999998
+        },
+        {
+          "repetition": 1,
+          "qid": "sample",
+          "status": "correct",
+          "predicted": "quartz",
+          "gold": "quartz",
+          "ready_s": 1.957677667
+        },
+        {
+          "repetition": 1,
+          "qid": "operator",
+          "status": "correct",
+          "predicted": "ivo",
+          "gold": "ivo",
+          "ready_s": 2.254212292
+        },
+        {
+          "repetition": 1,
+          "qid": "slot",
+          "status": "correct",
+          "predicted": "s3",
+          "gold": "s3",
+          "ready_s": 2.57646575
+        },
+        {
+          "repetition": 2,
+          "qid": "coordinator",
+          "status": "correct",
+          "predicted": "lyn",
+          "gold": "lyn",
+          "ready_s": 0.36361124999999994
+        },
+        {
+          "repetition": 2,
+          "qid": "gate",
+          "status": "correct",
+          "predicted": "indigo",
+          "gold": "indigo",
+          "ready_s": 0.6897129999999994
+        },
+        {
+          "repetition": 2,
+          "qid": "backup",
+          "status": "correct",
+          "predicted": "disabled",
+          "gold": "disabled",
+          "ready_s": 1.0372102499999993
+        },
+        {
+          "repetition": 2,
+          "qid": "departure",
+          "status": "correct",
+          "predicted": "thursday",
+          "gold": "thursday",
+          "ready_s": 1.3454391670000003
+        },
+        {
+          "repetition": 2,
+          "qid": "rover",
+          "status": "correct",
+          "predicted": "kestrel",
+          "gold": "kestrel",
+          "ready_s": 1.7562494169999994
+        },
+        {
+          "repetition": 2,
+          "qid": "sample",
+          "status": "correct",
+          "predicted": "quartz",
+          "gold": "quartz",
+          "ready_s": 2.1358881249999992
+        },
+        {
+          "repetition": 2,
+          "qid": "operator",
+          "status": "correct",
+          "predicted": "ivo",
+          "gold": "ivo",
+          "ready_s": 2.5322655419999993
+        },
+        {
+          "repetition": 2,
+          "qid": "slot",
+          "status": "correct",
+          "predicted": "s3",
+          "gold": "s3",
+          "ready_s": 2.810012875
+        },
+        {
+          "repetition": 3,
+          "qid": "coordinator",
+          "status": "correct",
+          "predicted": "lyn",
+          "gold": "lyn",
+          "ready_s": 0.297056542
+        },
+        {
+          "repetition": 3,
+          "qid": "gate",
+          "status": "correct",
+          "predicted": "indigo",
+          "gold": "indigo",
+          "ready_s": 0.633730958000001
+        },
+        {
+          "repetition": 3,
+          "qid": "backup",
+          "status": "correct",
+          "predicted": "disabled",
+          "gold": "disabled",
+          "ready_s": 0.9933648749999993
+        },
+        {
+          "repetition": 3,
+          "qid": "departure",
+          "status": "correct",
+          "predicted": "thursday",
+          "gold": "thursday",
+          "ready_s": 1.3917760830000017
+        },
+        {
+          "repetition": 3,
+          "qid": "rover",
+          "status": "correct",
+          "predicted": "kestrel",
+          "gold": "kestrel",
+          "ready_s": 1.7037983749999999
+        },
+        {
+          "repetition": 3,
+          "qid": "sample",
+          "status": "correct",
+          "predicted": "quartz",
+          "gold": "quartz",
+          "ready_s": 2.0024427499999984
+        },
+        {
+          "repetition": 3,
+          "qid": "operator",
+          "status": "correct",
+          "predicted": "ivo",
+          "gold": "ivo",
+          "ready_s": 2.2960903330000004
+        },
+        {
+          "repetition": 3,
+          "qid": "slot",
+          "status": "correct",
+          "predicted": "s3",
+          "gold": "s3",
+          "ready_s": 2.650815291999999
+        }
+      ],
+      "makespan_s_median": 2.6513294170000012,
+      "call_latency_s_median": 0.33057679149999963,
+      "question_ready_s_median": 1.4952329790000007,
+      "list_price_estimate_usd": 0.0007629300000000001
+    }
+  ],
+  "correct": 144,
+  "wrong": 0,
+  "missing": 0,
+  "invalid": 0,
+  "expected_answers": 144,
+  "calls": 102,
+  "failed_calls": 0,
+  "input_tokens": 220692,
+  "output_tokens": 7308,
+  "usage_missing_calls": 0,
+  "fully_correct_workloads": 18,
+  "workloads": 18,
+  "list_price_estimate_usd": 0.009269064,
+  "wall_start_utc": "2026-09-20T01:45:27.912619+00:00",
+  "wall_end_utc": "2026-09-20T01:45:50.008324+00:00",
+  "duration_s": 22.089945292,
+  "post_attempt_upper_bound": 102,
+  "confirmed_posts": 102,
+  "planned_posts": 102,
+  "planned_answers": 144,
+  "execution": "live",
+  "state_characters": {
+    "short": 1507,
+    "long": 12859
+  },
+  "plan_sha256": "15229c3cb11a286d0bc925686ca96951baf7e47a4f262841956ecba7c9825279",
+  "makespan_definition": "Workload start through final receipt, worker cleanup and journal; includes scheduling, process startup, TLS and network.",
+  "question_ready_definition": "Per-question valid answer availability from workload start; all eight batch answers share its completion time. Not makespan divided by eight.",
+  "call_latency_definition": "Parent wall time from before worker spawn to response receipt and worker cleanup; excludes prelaunch journal write.",
+  "price_note": "List-price estimate from observed input tokens at USD 0.042 per million; output free. Not an invoice. Missing usage unpriced.",
+  "uncertainty_note": "Three workload repetitions per cell; p95 would be unstable and is deliberately not reported. Repeated answers are correlated, not independent quality trials."
+}
