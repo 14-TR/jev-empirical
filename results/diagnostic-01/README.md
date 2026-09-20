@@ -20,7 +20,7 @@ Latency includes Python worker startup and HTTPS client overhead, measured seria
 
 ## Provenance and publication
 
-The report includes dataset and executed-code hashes. Raw API responses and credentials remain outside the repository. The repaired harness had 35 passing local tests when used; its independent re-review was pending at execution, so this run must not be described as post-approval. No inputs/prompts/labels were revised in response to these outcomes. The original receipt schema lacks a wall-clock timestamp; publication timing must not be substituted for exact request timestamps.
+The report includes dataset and executed-code hashes. Raw API responses and credentials remain outside the repository. The repaired harness had 35 passing local tests when used; its independent re-review was pending at execution, so this run must not be described as post-approval. No inputs/prompts/labels were revised in response to these outcomes. The private receipt records run start `2026-09-20T01:36:11.130884Z` and completion `2026-09-20T01:36:43.663471Z`. These are whole-run timestamps, not per-request timestamps. An earlier version of this note incorrectly stated that the receipt lacked wall-clock timestamps.
 
 - [Sanitized JSON](report.json)
 - [Full generated report](report.md)
