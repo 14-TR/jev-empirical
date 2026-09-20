@@ -2,7 +2,14 @@
 
 Independent, reproducible behavioral evaluation of TypeSafe's Jev.
 
-**Status: initial study under construction. No empirical performance conclusions yet.**
+**Status: reviewed research protocol and evidence audit published; diagnostic harness under review. No local Jev performance conclusions yet.**
+
+## Read the study
+
+- [Evidence review](docs/evidence-review.md): documented API and price, vendor results, third-party experiments, and methodological qualifications.
+- [Broad evaluation protocol](docs/protocol.md): prospective design, baselines, statistical analysis, robustness, and operational tests. A draft, not a completed preregistration.
+- [Limitations](docs/limitations.md): what each evidence tier can and cannot establish.
+- [Source ledger](docs/sources.json): retrieved references and supporting excerpts.
 
 This project asks where typed decision models succeed, where they fail, and whether their probabilities, latency, and cost support useful software decisions. It is broad by design; application-specific adoption decisions come later.
 
