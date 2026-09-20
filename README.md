@@ -2,7 +2,9 @@
 
 Independent, reproducible behavioral evaluation of TypeSafe's Jev.
 
-**Status: reviewed research protocol, tested harness, and first actual live Jev diagnostics published. More complex speed comparisons are under publication review.**
+**Status: reviewed research protocol, tested harness, first live diagnostics, and a live execution-strategy speed comparison published.**
+
+- [Live speed comparison](studies/speed-01/summary.md): batching, serial calls, and concurrency four on matched eight-question workloads; [reproduction instructions](studies/speed-01/README.md).
 
 - [First live diagnostic results](results/diagnostic-01/README.md): 101/101 authored diagnostic labels matched; deliberately limited, ceiling-effect evidence.
 - [Run the harness](scripts/USAGE.md): offline baseline, explicit live mode, replay, safety limits, and metric conventions.
