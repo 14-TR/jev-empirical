@@ -1,0 +1,20 @@
+# Never commit local credentials or unreviewed execution artifacts.
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.sqlite*
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.egg-info/
+build/
+dist/
+.DS_Store
+private/
+raw/
+runs/
+receipts/
+.local/
