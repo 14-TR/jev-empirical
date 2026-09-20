@@ -1,6 +1,35 @@
 # Hybrid Jev agent harness — implementation contract
 
-Status: authorized implementation; not yet a verified running agent.
+Status: implemented, independently reviewed, and exercised with actual Jev and Ollama calls. Source checkpoint: `967adb2`.
+
+## Run it
+
+Python 3.9+, a running local Ollama server with `qwen2.5:7b`, and `TYPESAFE_API_KEY` supplied through your environment are required. No model download is performed automatically. From the repository root:
+
+```sh
+PYTHONPATH=src python3 -m jev_agent run \
+  --workspace examples/agent-workspace \
+  --goal "Compare the policy and handbook return windows. For a purchase on 2026-09-10 with an unopened return requested on day 20, which rule controls, why, and what transition or fee exceptions apply? Cite the supersession evidence." \
+  --trace-dir "$HOME/.local/state/jev-agent-live/my-first-run" \
+  --allow-live --allow-workspace-upload \
+  --max-steps 10 --max-requests 11 --max-seconds 180 \
+  --request-timeout 20 --reasoning-timeout 90
+```
+
+The trace directory must be new, private, and outside Git and the input workspace. Start with the original fictional fixture, not personal documents. Never place API keys in commands, source files, or issues.
+
+## First actual hybrid execution
+
+The reviewed candidate passed 62 offline tests and then completed a real hybrid run:
+
+- Five Jev decisions: list files; select and read the change register; select and read policy v3; select and read the old handbook; select synthesis.
+- Three document reads, with the irrelevant lunch document left unread.
+- One actual local `qwen2.5:7b` synthesis request; six provider requests in total.
+- Resolved models: `jev-1.13.0` and `qwen2.5:7b`.
+- The answer correctly applied the 14-day rule to the September purchase, rejected the day-20 return absent discretionary approval, cited the supersession evidence, and identified the earlier-purchase transition rule.
+- **Observed quality gap:** the answer omitted the requested restocking-fee detail, despite retrieving it. The controller's `completed` status means execution completed, not that every user requirement was semantically verified. This first run demonstrates genuine orchestration, not perfect answer completeness.
+
+Raw private traces were not published. Provider confidence cutoffs remain uncalibrated heuristics. The agent is not authorized for arbitrary filesystem or shell operations.
 
 ## Goal
 
