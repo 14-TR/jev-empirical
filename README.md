@@ -2,13 +2,11 @@
 
 Independent, reproducible behavioral evaluation of TypeSafe's Jev.
 
-**Status: empirical studies, a working hybrid evidence agent, and the tested Incident Room app are published.**
+**Status: empirical studies and a working hybrid evidence agent are published.**
 
-## Try Incident Room
+## Results and tools
 
-**[Open the browser console](https://14-tr.github.io/jev-empirical/apps/incident-room/)** — inspect and play an actual recorded Jev/Qwen episode. No API keys or paid inference in the browser.
-
-The first hybrid episode stabilized at tick 8; the simple rules baseline stabilized at tick 4. The hybrid worked, but did not beat that baseline. [Results and limitations](apps/incident-room/RESULTS.md) · [run new episodes locally](apps/incident-room/README.md) · [read-only evidence-agent instructions](docs/hybrid-harness.md).
+[Read-only evidence-agent instructions](docs/hybrid-harness.md).
 
 - [Live speed comparison](studies/speed-01/summary.md): batching, serial calls, and concurrency four on matched eight-question workloads; [reproduction instructions](studies/speed-01/README.md).
 
