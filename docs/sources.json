@@ -1,0 +1,868 @@
+{
+  "version": 1,
+  "sources": [
+    {
+      "id": 1,
+      "url": "https://docs.typesafe.ai/llms.txt",
+      "title": "TypeSafe documentation index",
+      "accessed": "2026-09-20",
+      "quotes": [
+        {
+          "text": "> How to use TypeSafe's System One API",
+          "added": "2026-09-19"
+        }
+      ],
+      "retrieval_status": "retrieved",
+      "source_kind": "provider_documentation"
+    },
+    {
+      "id": 2,
+      "url": "https://docs.typesafe.ai/models.md",
+      "title": "Models",
+      "accessed": "2026-09-20",
+      "quotes": [
+        {
+          "text": "| Price (per Btok / per Mtok) | \\$42 / \\$0.042                                                                            |",
+          "added": "2026-09-19"
+        },
+        {
+          "text": "| Context length              | 64k tokens per request; 32k tokens for `state` plus the longest question                  |",
+          "added": "2026-09-19"
+        },
+        {
+          "text": "An alias moves when a new release ships, so the answers behind it can change without a change on your side. The response's `model` field reports the versioned ID that answered, so you can log which model produced each result. If you have tuned confidence thresholds against a specific version, pin that version's ID instead of the alias and move to the new one on your own",
+          "added": "2026-09-19"
+        },
+        {
+          "text": "**Rate limits are adjusting dynamically.** We are serving a very large volume of demand, and the limits above can change without notice while we do, as upcoming large GPU deals land and we let in more users. Once things settle down more, we'll be able to offer more stable limits. Higher limits are available on custom and enterprise plans. Contact [sales@typesafe.ai](mailto:sales@typesafe.ai).",
+          "added": "2026-09-19"
+        },
+        {
+          "text": "An alias moves when a new release ships, so the answers behind it can change without a change on your side",
+          "added": "2026-09-19"
+        }
+      ],
+      "retrieval_status": "retrieved",
+      "sha256": "9d20bb3c90a0147532d0b20ddc4c64579391be7842e965543b27bad684eeb4d6",
+      "retrieved_utc": "2026-09-20T00:56:40.361490+00:00",
+      "source_kind": "provider_documentation"
+    },
+    {
+      "id": 3,
+      "url": "https://docs.typesafe.ai/api.md",
+      "title": "API reference",
+      "accessed": "2026-09-20",
+      "quotes": [
+        {
+          "text": "Evaluate a `state` against a map of typed `questions` and get back structured `answers`, one per question. For a guided introduction, start with the [primitives](/primitives).",
+          "added": "2026-09-19"
+        },
+        {
+          "text": "A key you choose. The matching [Answer](#answer-types) is returned under this same id. The key is not sent to the underlying model and is not used in inference.",
+          "added": "2026-09-19"
+        },
+        {
+          "text": "Every answer carries a `type` matching its question. Choice and Score answers also carry a `confidence` between 0 to 1, derived from the answer's probability distribution. See [Confidence](/confidence).",
+          "added": "2026-09-19"
+        }
+      ],
+      "retrieval_status": "retrieved",
+      "sha256": "b9b205096ac164e26f7797a52551c72f2bb3d270dffd923dc7180af3b1a21ae8",
+      "retrieved_utc": "2026-09-20T00:56:40.372395+00:00",
+      "source_kind": "provider_documentation"
+    },
+    {
+      "id": 4,
+      "url": "https://docs.typesafe.ai/primitives/choice.md",
+      "title": "Choice",
+      "accessed": "2026-09-20",
+      "quotes": [
+        {
+          "text": "A Choice answer is the selected option in `choice`. The model also returns a probability for every option in `probabilities`, and a `confidence` value for the selected option.",
+          "added": "2026-09-19"
+        }
+      ],
+      "retrieval_status": "retrieved",
+      "sha256": "5ba42269e9a07ac5b1220ee6b6c69f060f57b6a7ff619cfedcb916acfb6c92c5",
+      "retrieved_utc": "2026-09-20T00:56:40.321017+00:00",
+      "source_kind": "provider_documentation"
+    },
+    {
+      "id": 5,
+      "url": "https://docs.typesafe.ai/primitives/noul.md",
+      "title": "Noul",
+      "accessed": "2026-09-20",
+      "quotes": [
+        {
+          "text": "A Noul answer is a single number, `noul`, the probability that the answer is yes.",
+          "added": "2026-09-19"
+        },
+        {
+          "text": "A value near 1 means a strong yes. A value near 0 means a strong no. A value near 0.5 gives yes and no similar probability.",
+          "added": "2026-09-19"
+        }
+      ],
+      "retrieval_status": "retrieved",
+      "sha256": "402a2f30ca71b53227058a5df3fb3e0a10063588a31b883f924d6660815c6916",
+      "retrieved_utc": "2026-09-20T00:56:40.364321+00:00",
+      "source_kind": "provider_documentation"
+    },
+    {
+      "id": 6,
+      "url": "https://docs.typesafe.ai/primitives/score.md",
+      "title": "Score",
+      "accessed": "2026-09-20",
+      "quotes": [
+        {
+          "text": "* `criteria`: An ordered array of level descriptions, from the low end of the scale to the high end. Needs at least two levels and takes up to 10.",
+          "added": "2026-09-19"
+        },
+        {
+          "text": "Each entry in `criteria` is a level: one point on the spectrum of possible answers, described in words. A level's number is its position in the `criteria` array, starting at 0, so the three entries above are levels 0, 1 and 2. The order of the array is the numbering.",
+          "added": "2026-09-19"
+        },
+        {
+          "text": "* `score`: The position on the level number line, from 0 to the top level number, which is 2 here. It's each level number multiplied by its probability, added up: 0 x 0.0 + 1 x 0.70 + 2 x 0.30 = 1.30.",
+          "added": "2026-09-19"
+        }
+      ],
+      "retrieval_status": "retrieved",
+      "sha256": "653ca2a688bf6613bf4c1621046a22c66e672a90cf40992c1fe218a8e96768c4",
+      "retrieved_utc": "2026-09-20T00:56:40.395368+00:00",
+      "source_kind": "provider_documentation"
+    },
+    {
+      "id": 7,
+      "url": "https://docs.typesafe.ai/confidence.md",
+      "title": "Confidence",
+      "accessed": "2026-09-20",
+      "quotes": [
+        {
+          "text": "`confidence` is a statistic computed from the probability distribution the answer already gives you. TypeSafe computes it for you and returns it on every Choice and Score answer, so the common case needs no extra work on your side.",
+          "added": "2026-09-19"
+        },
+        {
+          "text": "The pros and cons of different computations is a specialized topic that we'll keep to a separate cookbook rather than this page, and will add the link here when we",
+          "added": "2026-09-19"
+        },
+        {
+          "text": "The pros and cons of different computations is a specialized topic that we'll keep to a separate cookbook rather than this page, and will add the link here when we do!",
+          "added": "2026-09-19"
+        }
+      ],
+      "retrieval_status": "retrieved",
+      "sha256": "c553ccda01913b9962e33b9f3948afeb7496482ab8bfe5352ff0e451f97514ef",
+      "retrieved_utc": "2026-09-20T00:56:40.337268+00:00",
+      "source_kind": "provider_documentation"
+    },
+    {
+      "id": 8,
+      "url": "https://docs.typesafe.ai/model-jaggedness/jev-1.13.md",
+      "title": "Jev 1.13 jaggedness",
+      "accessed": "2026-09-20",
+      "quotes": [
+        {
+          "text": "**Applies to `jev-1.13`.** Last reviewed 2026-09-17.",
+          "added": "2026-09-19"
+        },
+        {
+          "text": "State is data, and `jev-1.13` does not treat it as hostile by default. Content written to adversarially steer the model, whether that is an injected instruction, a deliberately misleading framing, or text that argues for its own classification, can move the answer. We expect to improve on this in the future.",
+          "added": "2026-09-19"
+        },
+        {
+          "text": "don't rely on expected structural invariance, and word questions to mean directly what you want",
+          "added": "2026-09-19"
+        }
+      ],
+      "retrieval_status": "retrieved",
+      "sha256": "e69329bd32e91ac08f0bd2681ceb4aacc34923b9190e29c15c8f75d8e22950e2",
+      "retrieved_utc": "2026-09-20T00:56:40.358709+00:00",
+      "source_kind": "provider_documentation"
+    },
+    {
+      "id": 9,
+      "url": "https://typesafe.ai/blog/introducing-system-one-models-and-jev",
+      "title": "Introducing System One Models & Jev - TypeSafe AI Blog",
+      "accessed": "2026-09-20",
+      "quotes": [
+        {
+          "text": "This is where the claims of 193.6x faster, 444.6x cheaper on our home page comes from, and we expect that these are on the higher end of real world gains.",
+          "added": "2026-09-19"
+        },
+        {
+          "text": "Our number is not empirical. Schema matching is guaranteed, thus we can confidently add 0% into the plots.",
+          "added": "2026-09-19"
+        },
+        {
+          "text": "The LLMs use our System One LLM wrapper, which constrains LLMs to output structured decisions compatible with our API. We have found this to be the most accurate way to get decisions from LLMs, but this tends to be slower and more expensive than giving decisions without probabilities.",
+          "added": "2026-09-19"
+        }
+      ],
+      "retrieval_status": "retrieved",
+      "sha256": "c251d722af89bc377dc44f2daa8827f5d4df0b9619fa2cb72b4a6d382ea8e4c2",
+      "retrieved_utc": "2026-09-20T00:56:40.432862+00:00",
+      "source_kind": "provider_reported_claims"
+    },
+    {
+      "id": 10,
+      "url": "https://evals.typesafe.ai",
+      "title": "Workflow evals",
+      "accessed": "2026-09-20",
+      "quotes": [
+        {
+          "text": "Each point averages one model configuration's accuracy, cost and time over the four workflows with equal weight, against the consensus labels. Every model runs at its provider's default reasoning setting. Up and to the left is better.",
+          "added": "2026-09-19"
+        },
+        {
+          "text": "Instead of debating the correctness of the harness and labels, we assume that the code is correct, and measure against the current smartest large models",
+          "added": "2026-09-19"
+        }
+      ],
+      "retrieval_status": "retrieved",
+      "sha256": "f2f3cb6032395751d17581e4e48df6fadc2735c0a9f60ef878847dbdb8cae3d7",
+      "retrieved_utc": "2026-09-20T00:56:40.639952+00:00",
+      "source_kind": "provider_reported_claims"
+    },
+    {
+      "id": 11,
+      "url": "https://wotai.co/blog/typesafe-jev-vs-claude-haiku-tested",
+      "title": "TypeSafe Jev vs 15 other models, measured | WotAI",
+      "accessed": "2026-09-20",
+      "quotes": [
+        {
+          "text": "Jev66.0%0.12134.7%455ms56not published\ndeepseek/deepseek-v4-pro65.3%0.2620.7%11,156ms23$0.277\ngpt-5.565.3%0.19011.3%1,136ms39not published",
+          "added": "2026-09-19"
+        },
+        {
+          "text": "150 passages drawn from 35 blog posts that exist in two drafts, one rewritten into a warmer practitioner voice. Given a passage, return the probability it came from the rewritten draft. Only passages unique to one draft were used, so the answer is never in both.",
+          "added": "2026-09-19"
+        },
+        {
+          "text": "TypeSafe has not published a rate. Their docs have no pricing page and the API reference states no price. For reference, the same 150 rows cost $0.064 on Haiku 4.5 and $0.160 on Sonnet 5 at published rates.",
+          "added": "2026-09-19"
+        }
+      ],
+      "retrieval_status": "retrieved",
+      "sha256": "18474cab1da008613d8a8938dd36d0439aefc77183311311526bf334b71a0583",
+      "retrieved_utc": "2026-09-20T00:56:40.904069+00:00",
+      "source_kind": "third_party_report_not_locally_replicated"
+    },
+    {
+      "id": 12,
+      "url": "https://lindfors.no/blog/a-first-look-at-typesafes-jev",
+      "title": "An early-access test of TypeSafe's Jev: calibrated judgments for half a cent | lindfors.no",
+      "accessed": "2026-09-20",
+      "quotes": [
+        {
+          "text": "This post is an early-access test: one model version (jev-1.13.0), one day, 24 Norwegian documents. The model, the prices and the limits can all change before it opens up, so read the numbers as a snapshot from 18 September 2026.",
+          "added": "2026-09-19"
+        },
+        {
+          "text": "This changes what the numbers mean. Everything below is agreement with a frontier model's labels. Where the reference is wrong and Jev is right, Jev scores as wrong.",
+          "added": "2026-09-19"
+        },
+        {
+          "text": "OpenRouter spread my runs over 13, so the latency numbers above are a mix), and ask the ministry whether I can have all 412",
+          "added": "2026-09-19"
+        }
+      ],
+      "retrieval_status": "retrieved",
+      "sha256": "2509cd756ec5c483496194c02ea96c75de3d53d283b47ef5907a35d6fde8206d",
+      "retrieved_utc": "2026-09-20T00:57:27.064154+00:00",
+      "source_kind": "third_party_report_not_locally_replicated"
+    },
+    {
+      "id": 13,
+      "url": "https://arize.com/blog/typesafe-jev-llm-judge",
+      "title": "TypeSafe Jev: Can Decision Models Replace LLM Judges? | Arize AI",
+      "accessed": "2026-09-20",
+      "quotes": [
+        {
+          "text": "And the whole thing is incredibly fast and incredibly cheap: 40x to 200x faster and 40x to 400x cheaper, depending on the task, are TypeSafe’s numbers from TypeSafe’s evals. Of course, we know better than to take a vendor’s word for these things, so Arize will be running our own benchmarks just as soon as we can. But other people have already started doing that.",
+          "added": "2026-09-19"
+        },
+        {
+          "text": "Every‘s head of evals ran 777 judgments in under 0.7 seconds for about a quarter of a cent",
+          "added": "2026-09-19"
+        }
+      ],
+      "retrieval_status": "retrieved",
+      "sha256": "1a7cf272797a387432927c43fbd87efe2c0cd26af2a17d4a0006b128cf4e0218",
+      "retrieved_utc": "2026-09-20T00:56:40.985118+00:00",
+      "source_kind": "secondary_coverage"
+    },
+    {
+      "id": 14,
+      "url": "https://github.com/jabr/classifier-benchmark",
+      "title": "GitHub - jabr/classifier-benchmark · GitHub",
+      "accessed": "2026-09-20",
+      "retrieval_status": "retrieved",
+      "sha256": "30f5a84e38fdb4f2a700f20f3465c59ba8793e4e21e44c8bbfa30826405b0b6d",
+      "retrieved_utc": "2026-09-20T00:56:41.150975+00:00"
+    },
+    {
+      "id": 15,
+      "url": "https://docs.typesafe.ai/cookbooks/parallel_questions.md",
+      "title": "Parallel questions",
+      "accessed": "2026-09-20",
+      "quotes": [
+        {
+          "text": "> Runs a 13-question regulatory briefing over the GDPR Wikipedia article, showing that batching every question into one TypeSafe call is 12.2x cheaper and 10.0x faster with no change in answers.",
+          "added": "2026-09-19"
+        },
+        {
+          "text": "TYPESAFE_MODEL = \"jev-1.12\"",
+          "added": "2026-09-19"
+        },
+        {
+          "text": "RUNS = 5  # repeats per batching strategy, to estimate each answer's run-to-run std dev",
+          "added": "2026-09-19"
+        }
+      ],
+      "retrieval_status": "retrieved",
+      "sha256": "e142ddb58aeb69796358851910e856dc089335db10f6bcecc801e95ff5e28808",
+      "retrieved_utc": "2026-09-20T00:56:40.692477+00:00",
+      "source_kind": "provider_documentation"
+    },
+    {
+      "id": 16,
+      "url": "https://docs.typesafe.ai/cookbooks/rerank_typesafe.md",
+      "title": "Re-ranking",
+      "accessed": "2026-09-20",
+      "quotes": [
+        {
+          "text": "> Builds 30-passage BM25 shortlists for 40 CLERC legal queries, then uses one TypeSafe question per query-candidate pair to raise top-1 accuracy from 5% to 18% and top-10 accuracy from 38% to 62%.",
+          "added": "2026-09-19"
+        }
+      ],
+      "retrieval_status": "retrieved",
+      "sha256": "4e2362b0bdecb1bec0b53a898045568ee0bd5132af7d4b8d00c7b0982d3c16ee",
+      "retrieved_utc": "2026-09-20T00:56:40.805833+00:00",
+      "source_kind": "provider_documentation"
+    },
+    {
+      "id": 17,
+      "url": "https://docs.typesafe.ai/cookbooks/citation_check.md",
+      "title": "Double-checking citations",
+      "accessed": "2026-09-20",
+      "quotes": [
+        {
+          "text": "not enough: the quote can be accurate and the claim built on top of it still wrong.",
+          "added": "2026-09-19"
+        }
+      ],
+      "retrieval_status": "retrieved",
+      "sha256": "18f3f5c64f60807392b2d5e3f9a7b6d454e7a379c212025dcb1356b54aaa0635",
+      "retrieved_utc": "2026-09-20T00:56:40.681086+00:00",
+      "source_kind": "provider_documentation"
+    },
+    {
+      "id": 18,
+      "url": "https://docs.typesafe.ai/cookbooks/pre_parsed_value_extraction_cookbook.md",
+      "title": "Pre-parsed value extraction",
+      "accessed": "2026-09-20",
+      "quotes": [
+        {
+          "text": "*A regex finds the candidate values, TypeSafe picks the one the question asks for,",
+          "added": "2026-09-19"
+        },
+        {
+          "text": "Because TypeSafe only ever chooses among the spans the regex found, the value you get",
+          "added": "2026-09-19"
+        }
+      ],
+      "retrieval_status": "retrieved",
+      "sha256": "5a2026433afc618ab1ed16994d8c07281399e527482006a92e7e343ddcd96a2d",
+      "retrieved_utc": "2026-09-20T00:56:40.819458+00:00",
+      "source_kind": "provider_documentation"
+    },
+    {
+      "id": 19,
+      "url": "https://docs.typesafe.ai/patterns/composite-scoring.md",
+      "title": "Composite scoring",
+      "accessed": "2026-09-20",
+      "quotes": [
+        {
+          "text": "Oftentimes we want to rank a set of items based on several criteria at once. Composite scoring is an easy way to think about this: break the judgment into independent dimensions, score each one separately, and combine them with weights you control in code.",
+          "added": "2026-09-19"
+        }
+      ],
+      "retrieval_status": "retrieved",
+      "sha256": "b8cc7828beb5e7f585f2bdd00717bdef2394347a30ea12920ceb0c2080b9cef5",
+      "retrieved_utc": "2026-09-20T00:56:40.865519+00:00",
+      "source_kind": "provider_documentation"
+    },
+    {
+      "id": 20,
+      "url": "https://docs.typesafe.ai/patterns/confidence-routing.md",
+      "title": "Confidence-gated routing",
+      "accessed": "2026-09-20",
+      "quotes": [
+        {
+          "text": "The 0.6 floor catches anything the model is genuinely uncertain about",
+          "added": "2026-09-19"
+        }
+      ],
+      "retrieval_status": "retrieved",
+      "sha256": "5f1f8e0af76cb291d1583d8791f543a911f4ebebe1077ccd85e0178f2211b566",
+      "retrieved_utc": "2026-09-20T00:56:40.903983+00:00",
+      "source_kind": "provider_documentation"
+    },
+    {
+      "id": 21,
+      "url": "https://docs.typesafe.ai/cookbooks/sde_cascade.md",
+      "title": "SDE cascade",
+      "accessed": "2026-09-20",
+      "quotes": [
+        {
+          "text": "* we do *not* use structured outputs, tool calls, or json mode, because:",
+          "added": "2026-09-19"
+        },
+        {
+          "text": "# Hard-coded canonical fabrication (see note above); a real pipeline would use extract(MINI, prompt, schema, content, temperature=0).",
+          "added": "2026-09-19"
+        }
+      ],
+      "retrieval_status": "retrieved",
+      "sha256": "5d513d682f45ccaa85004d2e5437ae37b862b33e97e80013b458bc73ba6b5ddb",
+      "retrieved_utc": "2026-09-20T00:56:40.871660+00:00",
+      "source_kind": "provider_documentation"
+    },
+    {
+      "id": 22,
+      "url": "https://docs.typesafe.ai/concepts/state.md",
+      "title": "State",
+      "accessed": "2026-09-20",
+      "retrieval_status": "retrieved",
+      "sha256": "b83169672788220e04e702586823f02cea962dbb01bba3c09d3229c0711305eb",
+      "retrieved_utc": "2026-09-20T00:56:40.985239+00:00"
+    },
+    {
+      "id": 23,
+      "url": "https://nearhere.events/blog/typesafe-jev-mistral-gemini-event-validation",
+      "title": "TypeSafe Jev vs Mistral vs Gemini: Event Validation Test | Near Here",
+      "accessed": "2026-09-20",
+      "quotes": [
+        {
+          "text": "Accuracy on 50-case test set84% (42/50)86% (43/50)96% (48/50)",
+          "added": "2026-09-19"
+        },
+        {
+          "text": "Accuracy here means matching the expected decisions fixed before testing. The same 50 cases were used for all three models, and those cases informed prompt selection. Speed and cost come from the separate 21-record test described below. Neither sample estimates production accuracy.",
+          "added": "2026-09-19"
+        },
+        {
+          "text": "Correct decisions19 / 2120 / 2119 / 21",
+          "added": "2026-09-19"
+        }
+      ],
+      "retrieval_status": "retrieved",
+      "sha256": "b91986ef76012463910c0a46699f6f6af2e173aebe9d88fd823665ddd862fa46",
+      "retrieved_utc": "2026-09-20T00:57:27.404559+00:00",
+      "source_kind": "third_party_report_not_locally_replicated"
+    },
+    {
+      "id": 24,
+      "url": "https://every.to/also-true-for-humans/mini-vibe-check-typesafe-s-jev-judged-everything-i-ve-written-in-0-7-seconds",
+      "title": "Mini-Vibe Check: TypeSafe's Jev Judged Everything I’ve Written in 0.7 Seconds",
+      "accessed": "2026-09-20",
+      "quotes": [
+        {
+          "text": "Create a free account to continue reading",
+          "added": "2026-09-19"
+        }
+      ],
+      "retrieval_status": "partial_account_wall",
+      "sha256": "4227149f010098d17a377b1b3c586b9c694e124ba78dc8efd53b4862e71884c7",
+      "retrieved_utc": "2026-09-20T00:57:27.398128+00:00",
+      "review_note": "Introduction available; detailed experiment not accessible.",
+      "source_kind": "external_source"
+    },
+    {
+      "id": 25,
+      "url": "https://proceedings.mlr.press/v70/guo17a.html",
+      "title": "On Calibration of Modern Neural Networks",
+      "accessed": "2026-09-20",
+      "quotes": [
+        {
+          "text": "Confidence calibration – the problem of predicting probability estimates representative of the true correctness likelihood – is important for classification models in many applications",
+          "added": "2026-09-19"
+        }
+      ],
+      "retrieval_status": "retrieved",
+      "sha256": "fcd644b81c1d06d034060e3ff8079ccc6acc2213dbf846043b92059ce10d26f8",
+      "retrieved_utc": "2026-09-20T00:57:26.890080+00:00",
+      "source_kind": "external_source",
+      "review_scope": "Landing-page abstract only, not a full-paper methodological review."
+    },
+    {
+      "id": 26,
+      "url": "https://aclanthology.org/2020.nlp4convai-1.5",
+      "title": "Efficient Intent Detection with Dual Sentence Encoders - ACL Anthology",
+      "accessed": "2026-09-20",
+      "quotes": [
+        {
+          "text": "new challenging single-domain intent detection dataset comprising 13,083 annotated examples over 77 intents.Anthology ID:2020.nlp4convai-1.5Volume:Proceedings of the 2nd Workshop on Natural Language Processing for Conversational AIMonth:JulyYear:2020Address:OnlineEditors:Tsung-Hsien Wen,",
+          "added": "2026-09-19"
+        }
+      ],
+      "retrieval_status": "retrieved",
+      "sha256": "aa65ef215878299605d2b3a7f73af9928e8923de8cedf22a5da275e80b773250",
+      "retrieved_utc": "2026-09-20T00:57:27.048854+00:00",
+      "source_kind": "external_source",
+      "review_scope": "Landing-page abstract only, not a full-paper methodological review."
+    },
+    {
+      "id": 27,
+      "url": "https://aclanthology.org/N18-1074",
+      "title": "FEVER: a Large-scale Dataset for Fact Extraction and VERification - ACL Anthology",
+      "accessed": "2026-09-20",
+      "quotes": [
+        {
+          "text": "The claims are classified as Supported, Refuted or NotEnoughInfo by annotators achieving 0.6841 in Fleiss kappa",
+          "added": "2026-09-19"
+        }
+      ],
+      "retrieval_status": "retrieved",
+      "sha256": "52e4370de3b8e7b9dcde393128567907a633e40c30816d7887c609842aa6ba42",
+      "retrieved_utc": "2026-09-20T00:57:26.995610+00:00",
+      "source_kind": "external_source",
+      "review_scope": "Landing-page abstract only, not a full-paper methodological review."
+    },
+    {
+      "id": 28,
+      "url": "https://openreview.net/forum?id=wCu6T5xFjeJ",
+      "title": "Verifying your browser | OpenReview",
+      "accessed": "2026-09-20",
+      "retrieval_status": "blocked_challenge",
+      "sha256": "f37a0535b264548102bcba32e789bd5a593f1df3d03b570fdca2287f82966724",
+      "retrieved_utc": "2026-09-20T00:57:26.938437+00:00",
+      "review_note": "Challenge page, not paper; public repository used as alternative."
+    },
+    {
+      "id": 29,
+      "url": "https://docs.typesafe.ai/sdk/python/api/retries.md",
+      "title": "Retries",
+      "accessed": "2026-09-20",
+      "quotes": [
+        {
+          "text": "> Configure retries with RetryPolicy — attempt count, retryable statuses, backoff, and retry headers handling.",
+          "added": "2026-09-19"
+        }
+      ],
+      "retrieval_status": "retrieved",
+      "sha256": "bdf94b25ae1d23a0784c9e1affcf0363e80deb56089a0e48d3e3860bb5181cc9",
+      "retrieved_utc": "2026-09-20T00:57:26.938688+00:00",
+      "source_kind": "provider_documentation"
+    },
+    {
+      "id": 30,
+      "url": "https://docs.typesafe.ai/concepts/system-one.md",
+      "title": "System One",
+      "accessed": "2026-09-20",
+      "quotes": [
+        {
+          "text": "System One models are trained for calibrated decisions: their probabilities are optimized against outcomes to reflect uncertainty. Calibration is measured across groups of predictions; it does not guarantee that an individual answer is correct.",
+          "added": "2026-09-19"
+        }
+      ],
+      "retrieval_status": "retrieved",
+      "sha256": "e072211498bc1b6ed22d14aae2c2716903f4a8112e908cc45c35af65d3b84895",
+      "retrieved_utc": "2026-09-20T00:57:26.904100+00:00",
+      "source_kind": "provider_documentation"
+    },
+    {
+      "id": 31,
+      "url": "https://github.com/bitnovus/jev-spam-eval",
+      "title": "",
+      "accessed": "2026-09-19",
+      "retrieval_status": "discovery_only"
+    },
+    {
+      "id": 32,
+      "url": "https://github.com/EmilLindfors/jev-horingssvar-eval",
+      "title": "",
+      "accessed": "2026-09-19",
+      "retrieval_status": "discovery_only"
+    },
+    {
+      "id": 33,
+      "url": "https://raw.githubusercontent.com/beir-cellar/beir/main/README.md",
+      "title": "<h1 align=\"center\">",
+      "accessed": "2026-09-20",
+      "quotes": [
+        {
+          "text": "**BEIR** is a **heterogeneous benchmark** containing diverse IR tasks. It also provides a **common and easy framework** for evaluation of your NLP-based retrieval models within the benchmark.",
+          "added": "2026-09-19"
+        }
+      ],
+      "retrieval_status": "retrieved",
+      "sha256": "d030c5374d29194e6c23ded13314dc6964b253c137cbcf606765a4222f4bc4e1",
+      "retrieved_utc": "2026-09-20T00:58:20.993055+00:00",
+      "source_kind": "external_source"
+    },
+    {
+      "id": 34,
+      "url": "https://flaviocopes.com/jev",
+      "title": "",
+      "accessed": "2026-09-19",
+      "retrieval_status": "discovery_only"
+    },
+    {
+      "id": 35,
+      "url": "https://juliangoldie.com/jev-ai-model",
+      "title": "",
+      "accessed": "2026-09-19",
+      "retrieval_status": "discovery_only"
+    },
+    {
+      "id": 36,
+      "url": "https://www.orcarouter.ai/blog/jev-typesafe-system-one-what-we-know",
+      "title": "",
+      "accessed": "2026-09-19",
+      "retrieval_status": "discovery_only"
+    },
+    {
+      "id": 37,
+      "url": "https://meetcody.ai/blog/typesafe-jev-ai-system-one-model",
+      "title": "",
+      "accessed": "2026-09-19",
+      "retrieval_status": "discovery_only"
+    },
+    {
+      "id": 38,
+      "url": "https://juliangoldie.com/how-to-use-jev",
+      "title": "",
+      "accessed": "2026-09-19",
+      "retrieval_status": "discovery_only"
+    },
+    {
+      "id": 39,
+      "url": "https://jev.novcog.us.com",
+      "title": "",
+      "accessed": "2026-09-19",
+      "retrieval_status": "discovery_only"
+    },
+    {
+      "id": 40,
+      "url": "https://markhuang.ai/news/jev-schema-guarantee-wrong-decision",
+      "title": "",
+      "accessed": "2026-09-19",
+      "retrieval_status": "discovery_only"
+    },
+    {
+      "id": 41,
+      "url": "https://thecherrycreeknews.com/typesafe-jev-system-one-model-claims-evals-independent-tests-cherry_creek",
+      "title": "",
+      "accessed": "2026-09-19",
+      "retrieval_status": "discovery_only"
+    },
+    {
+      "id": 42,
+      "url": "https://dev.to/syedrafinaqvi/jev-cant-write-a-sentence-heres-how-id-test-its-decisions-15n3",
+      "title": "",
+      "accessed": "2026-09-19",
+      "retrieval_status": "discovery_only"
+    },
+    {
+      "id": 43,
+      "url": "https://www.datacamp.com/blog/system-one-models-jev",
+      "title": "",
+      "accessed": "2026-09-19",
+      "retrieval_status": "discovery_only"
+    },
+    {
+      "id": 44,
+      "url": "https://ayourtch-llm.github.io/apchat-blog/posts/2026-09-20-jev-clones-measured",
+      "title": "",
+      "accessed": "2026-09-19",
+      "retrieval_status": "discovery_only"
+    },
+    {
+      "id": 45,
+      "url": "https://glonce.com/typesafe-launches-jev-a-model-for-structured-decisions",
+      "title": "",
+      "accessed": "2026-09-19",
+      "retrieval_status": "discovery_only"
+    },
+    {
+      "id": 46,
+      "url": "https://github.com/bitnovus/jev-spam-eval/blob/a3757a1b3412177a686c1b4d95227b50a8f73537/README.md",
+      "title": "Zero-shot email classification with TypeSafe’s Jev",
+      "accessed": "2026-09-20",
+      "quotes": [
+        {
+          "text": "> **What zero-shot means here:** Jev's weights were not updated for these tasks, and its requests contained no labeled demonstrations. Some specifications and experiment choices were informed by earlier labeled errors, so this is zero-shot inference, not a claim of development without labeled feedback. Results are exploratory, use `jev-1.13.0`, and cannot establish whether the public corpora were unseen during pretraining.",
+          "added": "2026-09-19"
+        },
+        {
+          "text": "The result also extended beyond the main set. On 853 phishing messages from 2024–25, enriched Jev caught **95.31%**, compared with **75.26%** for regression given the same evidence and trained on 9,033 older messages. This later set measures phishing recall only; it contains no legitimate mail for measuring false positives.",
+          "added": "2026-09-19"
+        }
+      ],
+      "retrieval_status": "retrieved",
+      "sha256": "7d731299eef47bf661bdfc73d071ecb37bc92375e6a894bcac963a2c7f10bfc2",
+      "retrieved_utc": "2026-09-20T00:59:11.210585+00:00",
+      "source_kind": "pinned_third_party_artifact",
+      "repository_revision": "a3757a1b3412177a686c1b4d95227b50a8f73537"
+    },
+    {
+      "id": 47,
+      "url": "https://github.com/bitnovus/jev-spam-eval/blob/a3757a1b3412177a686c1b4d95227b50a8f73537/experiments/jev-context/REGRESSION_REPORT.md",
+      "title": "Matched-evidence comparison: Jev versus logistic regression",
+      "accessed": "2026-09-20",
+      "quotes": [
+        {
+          "text": "- Main: five-fold StratifiedGroupKFold, near-duplicate clusters kept together. Both regression variants use the exact same folds.",
+          "added": "2026-09-19"
+        },
+        {
+          "text": "| Jev enriched | 97.98% | 0.9798 | 98.43% | 99.16% | 1 | 15 |",
+          "added": "2026-09-19"
+        },
+        {
+          "text": "| LR enriched | 98.87% | 0.9887 | 99.22% | 99.53% | 2 | 7 |",
+          "added": "2026-09-19"
+        }
+      ],
+      "retrieval_status": "retrieved",
+      "sha256": "bd50eb7f097e7a67eb6120ac6a793d390427529a1d2cab6a92b5e472e15f158f",
+      "retrieved_utc": "2026-09-20T00:59:11.210993+00:00",
+      "source_kind": "pinned_third_party_artifact",
+      "repository_revision": "a3757a1b3412177a686c1b4d95227b50a8f73537"
+    },
+    {
+      "id": 48,
+      "url": "https://github.com/EmilLindfors/jev-horingssvar-eval/blob/ec97e2d7dc17ed035bf4a96365dfec9c360659a4/results/quick_eval_2026-09-18.txt",
+      "title": "reference: 24 docs in A, 24 in B",
+      "accessed": "2026-09-20",
+      "quotes": [
+        {
+          "text": "ECE 0.116  Brier 0.086",
+          "added": "2026-09-19"
+        },
+        {
+          "text": "ECE 0.040  Brier 0.089",
+          "added": "2026-09-19"
+        }
+      ],
+      "retrieval_status": "retrieved",
+      "sha256": "5b73fc31686f13416cc7c7bdcf926aaa3f615ff1c2b0c507262df1ba1c89c21c",
+      "retrieved_utc": "2026-09-20T00:59:11.211200+00:00",
+      "source_kind": "pinned_third_party_artifact",
+      "repository_revision": "ec97e2d7dc17ed035bf4a96365dfec9c360659a4"
+    },
+    {
+      "id": 49,
+      "url": "https://github.com/EmilLindfors/jev-horingssvar-eval/blob/ec97e2d7dc17ed035bf4a96365dfec9c360659a4/analysis/metrics.py",
+      "title": "norwegian-metrics",
+      "accessed": "2026-09-20",
+      "quotes": [
+        {
+          "text": "print(\"    arguments   \", boot([ref[u][\"arguments\"][k] == sys_[u][\"arguments\"][k] for u in uids for k in ARGS]))",
+          "added": "2026-09-19"
+        },
+        {
+          "text": "\"stance_conf\": max(a[\"stance\"][\"probabilities\"].values()),\n            \"respondent\": a[\"respondent\"][\"choice\"],\n            \"respondent_conf\": max(a[\"responde",
+          "added": "2026-09-19"
+        }
+      ],
+      "retrieval_status": "retrieved",
+      "sha256": "9dd9270e3a414dd9d61c3121c8782b392d0adf49dcbe9a30b5db4ab4c41fbe51",
+      "retrieved_utc": "2026-09-20T00:59:11.211377+00:00",
+      "source_kind": "pinned_third_party_artifact",
+      "repository_revision": "ec97e2d7dc17ed035bf4a96365dfec9c360659a4"
+    },
+    {
+      "id": 50,
+      "url": "https://github.com/jabr/classifier-benchmark/blob/91741e63c69017daeb2c775cdcd681c588280955/results/benchmark-summary.md",
+      "title": "Head-to-head: Von (wfzyx/von-1.0) vs GLiNER2 (fastino/gliner2-large-v1) vs Jev (typesafe/jev-1.13)",
+      "accessed": "2026-09-20",
+      "quotes": [
+        {
+          "text": "Benchmark: 8 tasks / 78 cases across three System One primitives —",
+          "added": "2026-09-19"
+        },
+        {
+          "text": "| **micro accuracy** | 0.654 | 0.795 | **0.974** |",
+          "added": "2026-09-19"
+        },
+        {
+          "text": "| mean latency / case | **~62 ms** | ~93 ms | ~302 ms |",
+          "added": "2026-09-19"
+        }
+      ],
+      "retrieval_status": "retrieved",
+      "sha256": "09e90273b2ad0152b1a875c3bdf9cdc6ed2b83b6ac12d4f406638c5c3c36a1b5",
+      "retrieved_utc": "2026-09-20T00:59:11.211543+00:00",
+      "source_kind": "pinned_third_party_artifact",
+      "repository_revision": "91741e63c69017daeb2c775cdcd681c588280955"
+    },
+    {
+      "id": 51,
+      "url": "https://github.com/jabr/classifier-benchmark/blob/91741e63c69017daeb2c775cdcd681c588280955/bench/backends/jev.py",
+      "title": "classifier-adapter",
+      "accessed": "2026-09-20",
+      "quotes": [
+        {
+          "text": "DEFAULT_BASE_URL = \"https://openrouter.ai/api/alpha/decisions\"",
+          "added": "2026-09-19"
+        },
+        {
+          "text": "best = max(probabilities, key=probabilities.get)",
+          "added": "2026-09-19"
+        }
+      ],
+      "retrieval_status": "retrieved",
+      "sha256": "a9e88a97e26a3198fbeb2047c37b895c38741d7112a72e16819c6605e9f1a452",
+      "retrieved_utc": "2026-09-20T00:59:11.211713+00:00",
+      "source_kind": "pinned_third_party_artifact",
+      "repository_revision": "91741e63c69017daeb2c775cdcd681c588280955"
+    },
+    {
+      "id": 52,
+      "url": "https://github.com/jabr/classifier-benchmark/blob/91741e63c69017daeb2c775cdcd681c588280955/bench/run.py",
+      "title": "classifier-harness",
+      "accessed": "2026-09-20",
+      "quotes": [
+        {
+          "text": "\"accuracy\": correct / len(scored) if scored else None,",
+          "added": "2026-09-19"
+        }
+      ],
+      "retrieval_status": "retrieved",
+      "sha256": "47c0f67b873c920061b4750a18d6d4cf38cd42e7856428093d841be37144ac79",
+      "retrieved_utc": "2026-09-20T00:59:11.211873+00:00",
+      "source_kind": "pinned_third_party_artifact",
+      "repository_revision": "91741e63c69017daeb2c775cdcd681c588280955"
+    },
+    {
+      "id": 53,
+      "url": "https://github.com/jabr/classifier-benchmark/blob/91741e63c69017daeb2c775cdcd681c588280955/results/jev.json",
+      "title": "Archived Jev classifier predictions, pinned revision",
+      "accessed": "2026-09-20",
+      "quotes": [
+        {
+          "text": "\"micro_accuracy\": 0.9743589743589743,\n      \"macro_accuracy\": 0.9722222222222222,\n      \"n\": 78,\n      \"errors\": 0,\n      \"wall_seconds\":",
+          "added": "2026-09-19"
+        }
+      ],
+      "retrieval_status": "retrieved",
+      "sha256": "2c33b5d33a50004b7a227e50eb676fe9bcf141941510928200c7c9fc3139d44a",
+      "retrieved_utc": "2026-09-20T01:05:43.902026+00:00",
+      "source_kind": "pinned_third_party_artifact",
+      "repository_revision": "91741e63c69017daeb2c775cdcd681c588280955",
+      "review_note": "Archived author predictions counted locally: 78 cases, 76 marked correct, zero terminal errors; no inference rerun or receipt authentication."
+    }
+  ],
+  "research_scope": {
+    "snapshot_utc_date": "2026-09-20",
+    "status": "bounded_first_pass",
+    "discovery_queries": [
+      "TypeSafe Jev benchmark model pricing API independent evaluation",
+      "\"Jev\" \"TypeSafe\" calibration benchmark"
+    ],
+    "raw_source_policy": "Full source snapshots retained in private research storage outside the repository; only metadata and brief evidence excerpts published.",
+    "new_model_inference_performed": false
+  }
+}
